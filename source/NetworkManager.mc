@@ -1,38 +1,35 @@
-import Toybox.Application as App;
-import Toybox.Lang as Lang;
-import Toybox.System as Sys;
-import Toybox.WatchUi as WatchUi;
+using Toybox.Communications as Comm;
+using Toybox.System;
 
-class MyHevyApp extends App.AppBase {
-    hidden var settings;
-    hidden var routines;
+class NetworkManager {
+    hidden var _apiKey;
 
-    function initialize() {
-        settings = new Settings();
-        routines = [];
+    function initialize(apiKey) {
+        _apiKey = apiKey;
     }
 
-    function onStart() {
-        if (settings.getApiKey() == "") {
-            WatchUi.showSettings(settings);
-        } else {
-            fetchRoutines();
-        }
+    function fetchRoutines(callback) {
+        var url = "https://api.hevy.com/v1/routines";
+        var options = {
+            :method => Comm.HTTP_REQUEST_METHOD_GET,
+            :headers => {
+                "api-key" => _apiKey
+            },
+            :responseType => Comm.HTTP_RESPONSE_CONTENT_TYPE_JSON
+        };
+        Comm.makeWebRequest(url, null, options, callback);
     }
 
-    function fetchRoutines() {
-        var api = new HevyApi(settings.getApiKey());
-        api.getRoutines(function(response) {
-            if (response.isSuccess()) {
-                routines = response.getData();
-                displayRoutines();
-            } else {
-                WatchUi.showMessage("Error fetching routines");
-            }
-        });
-    }
-
-    function displayRoutines() {
-        // Logic to display routines and exercises
+    function postWorkout(workoutData, callback) {
+        var url = "https://api.hevy.com/v1/workouts";
+        var options = {
+            :method => Comm.HTTP_REQUEST_METHOD_POST,
+            :headers => {
+                "api-key" => _apiKey,
+                "Content-Type" => "application/json"
+            },
+            :responseType => Comm.HTTP_RESPONSE_CONTENT_TYPE_JSON
+        };
+        Comm.makeWebRequest(url, workoutData, options, callback);
     }
 }

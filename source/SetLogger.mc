@@ -1,19 +1,32 @@
-class SettingsScreen extends Ui.Screen {
-    hidden var apiKey;
+using Toybox.System;
 
-    function initialize() {
-        // Initialize the screen
-        apiKey = Settings.get("hevy_api_key", "");
+class SetLogger {
+    hidden var _networkManager;
+
+    function initialize(networkManager) {
+        _networkManager = networkManager;
     }
 
-    function onShow() {
-        // Display the settings UI
-        Ui.drawText("Enter Hevy API Key:", 0, 0);
-        Ui.drawTextInput(apiKey, 0, 20);
+    function logSet(exerciseId, setData) {
+        var workoutData = {
+            "exercise_id" => exerciseId,
+            "sets" => [setData]
+        };
+        StorageManager.savePendingWorkout(workoutData);
     }
 
-    function onSave() {
-        // Save the API key
-        Settings.set("hevy_api_key", apiKey);
+    function syncPending() {
+        var pending = StorageManager.getPendingWorkouts();
+        if (pending.size() > 0) {
+            _networkManager.postWorkout(pending[0], method(:onPostResponse));
+        }
+    }
+
+    function onPostResponse(responseCode, data) {
+        if (responseCode == 200) {
+            StorageManager.clearPendingWorkouts();
+        } else {
+            System.println("Failed to post workout: " + responseCode);
+        }
     }
 }

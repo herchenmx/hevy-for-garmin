@@ -1,19 +1,5 @@
-class SettingsScreen extends Ui.Screen {
-    hidden var apiKey;
-
-    function initialize() {
-        // Initialize the screen
-        apiKey = Settings.get("hevy_api_key", "");
-    }
-
-    function onShow() {
-        // Display the settings UI
-        Ui.drawText("Enter Hevy API Key:", 0, 0);
-        Ui.drawTextInput(apiKey, 0, 1);
-    }
-
-    function onSave() {
-        // Save the API key
-        Settings.set("hevy_api_key", apiKey);
-    }
+class AppConstants {
+    static var API_BASE_URL = "https://api.hevy.com/v1";
+    static var ROUTINES_ENDPOINT = "/routines";
+    static var WORKOUTS_ENDPOINT = "/workouts";
 }

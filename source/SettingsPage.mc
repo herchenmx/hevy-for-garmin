@@ -1,19 +1,24 @@
-class SettingsScreen extends Ui.Screen {
-    hidden var apiKey;
+using Toybox.WatchUi;
+using Toybox.Graphics;
+
+class SettingsView extends WatchUi.View {
 
     function initialize() {
-        // Initialize the screen
-        this.apiKey = Settings.get("hevy_api_key", "");
+        View.initialize();
     }
 
-    function onShow() {
-        // Display the settings UI
-        // Add input field for API key
-        // Save the API key when the user submits
+    function onLayout(dc) {
     }
 
-    function onSave() {
-        // Save the API key to settings
-        Settings.set("hevy_api_key", this.apiKey);
+    function onUpdate(dc) {
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.clear();
+        dc.drawText(
+            dc.getWidth() / 2,
+            dc.getHeight() / 2,
+            Graphics.FONT_SMALL,
+            "Set API Key\nin Settings",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
     }
 }

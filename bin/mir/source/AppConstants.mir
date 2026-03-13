@@ -1,0 +1,22 @@
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 1; @symbol_classdef = [AppConstants,1,6,18]; ]
+class AppConstants {
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 2; @position = 15; @symbol_vardef = [API_BASE_URL,2,15,27]; ]
+    static
+    var API_BASE_URL = "https://api.hevy.com/v1";
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 3; @position = 15; @symbol_vardef = [ROUTINES_ENDPOINT,3,15,32]; ]
+    static
+    var ROUTINES_ENDPOINT = "/routines";
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 4; @position = 15; @symbol_vardef = [WORKOUTS_ENDPOINT,4,15,32]; ]
+    static
+    var WORKOUTS_ENDPOINT = "/workouts";
+}
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/AppConstants.mc"; @line = 1; ]
+<init> {
+}

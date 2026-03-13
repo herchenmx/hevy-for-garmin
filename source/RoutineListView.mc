@@ -1,67 +1,71 @@
-import Toybox.System as Sys;
-import Toybox.Lang as Lang;
-import Toybox.WatchUi as WatchUi;
-import Toybox.Communications as Comm;
-import Toybox.Storage as Storage;
+using Toybox.WatchUi;
+using Toybox.Graphics;
+using Toybox.Application.Storage;
+using Toybox.System;
 
-class HevyApp extends WatchUi.Application {
-    hidden var apiKey;
-    hidden var routines;
+class RoutineListView extends WatchUi.View {
+    hidden var _routines;
+    hidden var _networkManager;
+    hidden var _statusText;
 
     function initialize() {
-        // Load API key from storage
-        apiKey = Storage.readString("hevy_api_key");
-        // Fetch routines if API key is set
+        View.initialize();
+        _routines = [];
+        _statusText = "Loading...";
+        var apiKey = Storage.getValue("hevy_api_key");
         if (apiKey != null) {
-            fetchRoutines();
+            _networkManager = new NetworkManager(apiKey);
+            _networkManager.fetchRoutines(method(:onRoutinesFetched));
         } else {
-            showSettingsScreen();
+            _statusText = "No API Key";
         }
     }
 
-    function showSettingsScreen() {
-        // Implement settings screen to enter API key
+    function onLayout(dc) {
     }
 
-    function fetchRoutines() {
-        // Fetch routines from Hevy API
-        var url = "https://api.hevy.com/v1/routines";
-        var request = Comm.HttpRequest(url, Comm.HttpRequestMethod.GET);
-        request.setHeader("Authorization", "Bearer " + apiKey);
-        request.send(this, "onFetchRoutinesResponse");
-    }
-
-    function onFetchRoutinesResponse(response) {
-        if (response.getStatusCode() == 200) {
-            routines = response.getBody();
-            displayRoutines();
+    function onUpdate(dc) {
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.clear();
+        if (_routines.size() == 0) {
+            dc.drawText(
+                dc.getWidth() / 2,
+                dc.getHeight() / 2,
+                Graphics.FONT_SMALL,
+                _statusText,
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            );
         } else {
-            // Handle error
+            dc.drawText(
+                dc.getWidth() / 2,
+                dc.getHeight() / 2,
+                Graphics.FONT_SMALL,
+                _routines.size() + " Routines",
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            );
         }
     }
 
-    function displayRoutines() {
-        // Display routines and allow user to select one
-    }
-
-    function logSet(routineId, exerciseId, setData) {
-        // Log the set locally or send to Hevy API
-        var url = "https://api.hevy.com/v1/workouts";
-        var request = Comm.HttpRequest(url, Comm.HttpRequestMethod.POST);
-        request.setHeader("Authorization", "Bearer " + apiKey);
-        request.setBody(Lang.toJson(setData));
-        request.send(this, "onLogSetResponse");
-    }
-
-    function onLogSetResponse(response) {
-        if (response.getStatusCode() == 200) {
-            // Successfully logged
+    function onRoutinesFetched(responseCode, data) {
+        if (responseCode == 200 && data != null) {
+            var routines = data["routines"];
+            if (routines != null) {
+                _routines = routines;
+            }
         } else {
-            // Handle error
+            _statusText = "Error: " + responseCode;
+            System.println("Error fetching routines: " + responseCode);
         }
+        WatchUi.requestUpdate();
+    }
+}
+
+class RoutineListDelegate extends WatchUi.BehaviorDelegate {
+    function initialize() {
+        BehaviorDelegate.initialize();
     }
 
-    function syncData() {
-        // Sync locally stored data with Hevy API when connected
+    function onMenu() {
+        return true;
     }
 }

@@ -1,0 +1,101 @@
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Application,1,13,24]; ]
+using Toybox.Application;
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Application,3,13,24]; @symbol_usingdef<2> = [Storage,3,25,32]; ]
+using Toybox.Application.Storage;
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 5; @symbol_classdef = [HevyApp,5,6,13]; @symbol_extends<0> = [Application,5,22,33]; @symbol_extends<1> = [AppBase,5,34,41]; ]
+class HevyApp extends Application.AppBase {
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_7_26_9_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" 8 8 ]
+        symbol [ Application %tmp.1 8 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ AppBase %tmp.2 8 20 27 ];
+        %tmp.2 = getv %tmp.1 :AppBase;
+        symbol [ initialize %tmp.3 8 28 38 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_7_26_9_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 11; @symbol_functiondef = [onStart,11,13,20]; @symbol_param<0> = [state,11,21,26]; ]
+    function onStart(state) {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 14; @symbol_functiondef = [onStop,14,13,19]; @symbol_param<0> = [state,14,20,25]; ]
+    function onStop(state) {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 17; @symbol_functiondef = [getInitialView,17,13,27]; ]
+    function getInitialView() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_17_30_23_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" 18 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_17_30_23_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_17_30_23_4_stop" ]
+        %apiKey.1 = local;
+        symbol [ apiKey %apiKey.1 18 12 18 ];
+        symbol [ Storage %tmp.1 18 21 28 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 18 29 37 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = "hevy_api_key";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %apiKey.1 %tmp.4;
+        symbol [ apiKey %apiKey.1 18 12 18 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" 19 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_8_21_8_if_stmt:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_12_19_46_begin:
+        %tmp.5 = lgetv %apiKey.1;
+        symbol [ apiKey %tmp.5 19 12 18 ];
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bt %tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_8_21_8_if_true;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_30_19_46_false:
+        %tmp.8 = lgetv %apiKey.1;
+        symbol [ apiKey %tmp.8 19 30 36 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        symbol [ equals %tmp.10 19 37 43 ];
+        %tmp.10 = getv function %tmp.9 :equals;
+        %tmp.11 = "";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        push %tmp.12;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_30_19_46_end:
+        %tmp.13 = phi [%tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_12_19_46_begin] [%tmp.12 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_30_19_46_false] [%tmp.13 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_30_19_46_end];
+        bf %tmp.13 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_8_21_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_8_21_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_49_21_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" 20 12 ]
+        %tmp.14 = newa 1;
+        symbol [ SettingsView %tmp.18 20 24 36 ];
+        %tmp.18 = getv ? :SettingsView;
+        %tmp.15 = newc %tmp.18 ();
+        %tmp.19 = dup %tmp.14;
+        %tmp.20 = aputv %tmp.19 0 %tmp.15;
+        ret %tmp.20;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_49_21_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_8_21_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_19_8_21_8_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" 22 8 ]
+        %tmp.21 = newa 2;
+        symbol [ RoutineListView %tmp.25 22 20 35 ];
+        %tmp.25 = getv ? :RoutineListView;
+        %tmp.22 = newc %tmp.25 ();
+        %tmp.26 = dup %tmp.21;
+        %tmp.27 = aputv %tmp.26 0 %tmp.22;
+        symbol [ RoutineListDelegate %tmp.31 22 43 62 ];
+        %tmp.31 = getv ? :RoutineListDelegate;
+        %tmp.28 = newc %tmp.31 ();
+        %tmp.32 = dup %tmp.27;
+        %tmp.33 = aputv %tmp.32 1 %tmp.28;
+        ret %tmp.33;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_App_mc_17_30_23_4_stop:
+    }
+}
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc"; @line = 1; ]
+<init> {
+}

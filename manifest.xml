@@ -2,8 +2,8 @@
     <iq:application
         entry="HevyApp"
         id="c1a2b3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c"
-        launchLabel="Hevy for Garmin"
-        minSdkVersion="4.0.0"
+        launcherIcon="@Drawables.LauncherIcon"
+        minSdkVersion="3.2.0"
         name="@Strings.AppName"
         type="watch-app">
         <iq:products>
