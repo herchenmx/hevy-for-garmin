@@ -1,0 +1,30 @@
+<iq:manifest xmlns:iq="com.garmin.devices/appsettings" version="3">
+    <iq:application
+        entry="HevyApp"
+        id="c1a2b3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c"
+        launchLabel="Hevy for Garmin"
+        minSdkVersion="4.0.0"
+        name="@Strings.AppName"
+        type="watch-app"
+        version="1.0.0">
+        <iq:products>
+            <iq:product id="fenix6"/>
+            <iq:product id="fenix6s"/>
+            <iq:product id="fenix6x"/>
+            <iq:product id="fenix7"/>
+            <iq:product id="fenix7s"/>
+            <iq:product id="fenix7x"/>
+            <iq:product id="vivoactive4"/>
+            <iq:product id="vivoactive4s"/>
+            <iq:product id="forerunner245"/>
+            <iq:product id="forerunner945"/>
+        </iq:products>
+        <iq:permissions>
+            <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="Sensor"/>
+        </iq:permissions>
+        <iq:languages>
+            <iq:language id="eng"/>
+        </iq:languages>
+    </iq:application>
+</iq:manifest>
