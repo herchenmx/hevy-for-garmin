@@ -1,0 +1,91 @@
+import Toybox.Application as App;
+import Toybox.Lang as Lang;
+import Toybox.System as Sys;
+import Toybox.WatchUi as WatchUi;
+import Toybox.Communications as Comm;
+import Toybox.Storage as Storage;
+
+class HevyApp extends App.AppBase {
+    hidden var apiKey;
+    hidden var routines;
+    hidden var offlineData;
+
+    function initialize() {
+        App.AppBase.initialize();
+        apiKey = Storage.readString("hevy_api_key");
+        offlineData = Storage.readObject("offline_data", {});
+        fetchRoutines();
+    }
+
+    function fetchRoutines() {
+        if (apiKey != null) {
+            // Make API call to fetch routines
+            var url = "https://api.hevy.app/v1/routines";
+            Comm.get(url, { "Authorization": "Bearer " + apiKey }, this.onFetchRoutines);
+        } else {
+            // Show settings screen if API key is not set
+            showSettingsScreen();
+        }
+    }
+
+    function onFetchRoutines(response) {
+        if (response.getStatus() == Comm.STATUS_OK) {
+            routines = response.getBody();
+            displayRoutines();
+        } else {
+            // Handle error
+            WatchUi.messageBox("Error fetching routines: " + response.getStatus());
+        }
+    }
+
+    function displayRoutines() {
+        // Display routines on the watch
+        // Implement UI to show routines and allow user to select one
+    }
+
+    function showSettingsScreen() {
+        // Implement settings screen to enter API key
+        // Save the API key using Storage.writeString("hevy_api_key", apiKey);
+    }
+
+    function logSet(routineId, exerciseId, setData) {
+        // Log the set data locally or send to Hevy API
+        if (Comm.isConnected()) {
+            postSetToHevy(routineId, exerciseId, setData);
+        } else {
+            saveOfflineData(routineId, exerciseId, setData);
+        }
+    }
+
+    function postSetToHevy(routineId, exerciseId, setData) {
+        var url = "https://api.hevy.app/v1/workouts";
+        var payload = { "routineId": routineId, "exerciseId": exerciseId, "setData": setData };
+        Comm.post(url, payload, { "Authorization": "Bearer " + apiKey }, this.onPostSet);
+    }
+
+    function onPostSet(response) {
+        if (response.getStatus() == Comm.STATUS_OK) {
+            // Successfully posted
+        } else {
+            // Handle error
+        }
+    }
+
+    function saveOfflineData(routineId, exerciseId, setData) {
+        // Save data locally for syncing later
+        offlineData.push({ "routineId": routineId, "exerciseId": exerciseId, "setData": setData });
+        Storage.writeObject("offline_data", offlineData);
+    }
+
+    function syncOfflineData() {
+        // Check for connectivity and sync offline data
+        if (Comm.isConnected() && offlineData.size() > 0) {
+            foreach (data in offlineData) {
+                postSetToHevy(data.routineId, data.exerciseId, data.setData);
+            }
+            // Clear offline data after syncing
+            offlineData.clear();
+            Storage.writeObject("offline_data", offlineData);
+        }
+    }
+}

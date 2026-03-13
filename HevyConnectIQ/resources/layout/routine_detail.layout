@@ -1,0 +1,59 @@
+import System;
+import App;
+import Settings;
+import HevyApi;
+import LocalStorage;
+
+class MyHevyApp extends App.AppBase {
+    var apiKey;
+    var routines;
+
+    function initialize() {
+        // Load API key from local storage
+        apiKey = LocalStorage.getApiKey();
+        if (apiKey == null) {
+            // Show settings screen if API key is not set
+            Settings.showSettings(this);
+        } else {
+            fetchRoutines();
+        }
+    }
+
+    function fetchRoutines() {
+        if (System.getConnectionType() == System.CONNECTION_TYPE_WIFI) {
+            HevyApi.getRoutines(apiKey, this.onRoutinesFetched);
+        } else {
+            // Load from local storage if offline
+            routines = LocalStorage.getRoutines();
+            displayRoutines();
+        }
+    }
+
+    function onRoutinesFetched(routinesData) {
+        routines = routinesData;
+        LocalStorage.saveRoutines(routines);
+        displayRoutines();
+    }
+
+    function displayRoutines() {
+        // Code to display routines and exercises on the watch
+    }
+
+    function logSet(exerciseId, setData) {
+        // Log the set and post to Hevy API
+        if (System.getConnectionType() == System.CONNECTION_TYPE_WIFI) {
+            HevyApi.logSet(apiKey, exerciseId, setData);
+        } else {
+            LocalStorage.saveSetLocally(exerciseId, setData);
+        }
+    }
+
+    function syncData() {
+        // Sync local data with Hevy API when reconnected
+        var localSets = LocalStorage.getLocalSets();
+        foreach (localSets as set) {
+            HevyApi.logSet(apiKey, set.exerciseId, set.data);
+        }
+        LocalStorage.clearLocalSets();
+    }
+}

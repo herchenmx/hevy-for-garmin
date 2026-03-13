@@ -1,0 +1,15 @@
+class SettingsScreen extends Ui.Screen {
+    hidden var apiKey;
+
+    function initialize() {
+        // Initialize the screen and UI components
+        this.apiKey = Settings.get("hevy_api_key", "");
+        // Add UI elements for input
+    }
+
+    function onSave() {
+        // Save the API key
+        Settings.set("hevy_api_key", this.apiKey);
+        // Optionally, notify the user that the key has been saved
+    }
+}

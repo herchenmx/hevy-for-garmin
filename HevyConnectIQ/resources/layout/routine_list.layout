@@ -1,0 +1,96 @@
+import Toybox.Lang as Lang;
+import Toybox.System as System;
+import Toybox.Network as Network;
+import Toybox.Storage as Storage;
+import Toybox.WatchUi as WatchUi;
+import Toybox.WatchUi.Settings as Settings;
+
+class HevyApp extends App.AppBase {
+    var apiKey;
+    var routines;
+    var localData;
+
+    function initialize() {
+        // Load settings
+        apiKey = Storage.readString("hevy_api_key");
+        localData = Storage.readString("local_workouts") || [];
+        fetchRoutines();
+    }
+
+    function fetchRoutines() {
+        if (Network.isConnected()) {
+            var url = "https://api.hevy.com/v1/routines";
+            var request = Network.createRequest(url, Network.HTTP_GET);
+            request.setHeader("Authorization", "Bearer " + apiKey);
+            request.send(this, "onRoutinesFetched");
+        } else {
+            // Handle offline mode
+            displayLocalRoutines();
+        }
+    }
+
+    function onRoutinesFetched(response) {
+        if (response.getStatusCode() == 200) {
+            routines = response.getBody();
+            displayRoutines();
+        } else {
+            // Handle error
+            WatchUi.messageBox("Error fetching routines: " + response.getStatusCode());
+        }
+    }
+
+    function displayRoutines() {
+        // Display routines on the watch
+        // Implement UI to show routines and allow user to select one
+    }
+
+    function logSet(routineId, exerciseId, setData) {
+        if (Network.isConnected()) {
+            postWorkout(routineId, exerciseId, setData);
+        } else {
+            saveLocally(routineId, exerciseId, setData);
+        }
+    }
+
+    function postWorkout(routineId, exerciseId, setData) {
+        var url = "https://api.hevy.com/v1/workouts";
+        var request = Network.createRequest(url, Network.HTTP_POST);
+        request.setHeader("Authorization", "Bearer " + apiKey);
+        request.setBody(Lang.toJson(setData));
+        request.send(this, "onWorkoutPosted");
+    }
+
+    function onWorkoutPosted(response) {
+        if (response.getStatusCode() == 201) {
+            WatchUi.messageBox("Workout logged successfully!");
+        } else {
+            WatchUi.messageBox("Error logging workout: " + response.getStatusCode());
+        }
+    }
+
+    function saveLocally(routineId, exerciseId, setData) {
+        localData.push({routineId: routineId, exerciseId: exerciseId, setData: setData});
+        Storage.writeString("local_workouts", Lang.toJson(localData));
+        WatchUi.messageBox("Workout saved locally!");
+    }
+
+    function syncLocalData() {
+        if (Network.isConnected() && localData.length > 0) {
+            foreach (localData as workout) {
+                postWorkout(workout.routineId, workout.exerciseId, workout.setData);
+            }
+            // Clear local data after syncing
+            localData = [];
+            Storage.writeString("local_workouts", Lang.toJson(localData));
+        }
+    }
+
+    function settingsScreen() {
+        var settings = new Settings.SettingsScreen();
+        settings.addTextField("API Key", apiKey, function(value) {
+            apiKey = value;
+            Storage.writeString("hevy_api_key", apiKey);
+        });
+        settings.show();
+    }
+}
