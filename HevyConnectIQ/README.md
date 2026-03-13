@@ -149,4 +149,4 @@ class MyApp extends App {
 
 This is a basic outline of how you can create a Garmin Connect IQ app that interacts with the Hevy API. You will need to handle various edge cases, such as error handling, user feedback, and UI improvements. Additionally, ensure you comply with the Hevy API's usage policies and guidelines. 
 
-Make sure to test your app thoroughly on a compatible Garmin device to ensure it works as expected.
+Make sure to test your app thoroughly on a compatible Garmin device to ensure it works as expected.# hevy-for-garmin
