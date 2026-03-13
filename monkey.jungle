@@ -1,0 +1,35 @@
+[project]
+name = "Hevy for Garmin"
+id = "com.hevy.garmin"
+version = "1.0.0"
+guid = "c1a2b3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c"
+author = "Hevy"
+description = "Log Hevy workouts from a Garmin device."
+copyright = "© 2026 Hevy"
+
+[build]
+minimumSdkVersion = "4.0"
+sdkVersion = "5.0"
+
+[targets]
+# Target all Garmin Connect IQ capable devices
+# (The Connect IQ build system will include all supported devices)
+devices = [ "all" ]
+```// filepath: /Users/maria/Downloads/hevy-for-garmin-app/monkey.jungle
+[project]
+name = "Hevy for Garmin"
+id = "com.hevy.garmin"
+version = "1.0.0"
+guid = "c1a2b3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c"
+author = "Hevy"
+description = "Log Hevy workouts from a Garmin device."
+copyright = "© 2026 Hevy"
+
+[build]
+minimumSdkVersion = "4.0"
+sdkVersion = "5.0"
+
+[targets]
+# Target all Garmin Connect IQ capable devices
+# (The Connect IQ build system will include all supported devices)
+devices = [ "all" ]
