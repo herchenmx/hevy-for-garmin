@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run on vivoactive4 Simulator",
+            "request": "launch",
+            "type": "monkeyc",
+            "device": "vivoactive4",
+            "prg": "${workspaceFolder}/bin/HevyConnectIQ.prg",
+            "jungleFiles": "${workspaceFolder}/monkey.jungle",
+            "developerKeyPath": "/Users/maria/Documents/ConnectIQ/developer_key.der"
+        }
+    ]
+}

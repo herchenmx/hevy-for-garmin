@@ -1,0 +1,671 @@
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; ]
+using Toybox.System;
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 5; @symbol_classdef = [FolderListView,5,6,20]; @symbol_extends<0> = [WatchUi,5,29,36]; @symbol_extends<1> = [View,5,37,41]; ]
+class FolderListView extends WatchUi.View {
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 6; @position = 15; @symbol_vardef = [_folders,6,15,23]; ]
+    protected
+    var _folders;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 7; @position = 15; @symbol_vardef = [_networkManager,7,15,30]; ]
+    protected
+    var _networkManager;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 8; @position = 15; @symbol_vardef = [_statusText,8,15,26]; ]
+    protected
+    var _statusText;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 9; @position = 15; @symbol_vardef = [_selectedIndex,9,15,29]; ]
+    protected
+    var _selectedIndex;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; @symbol_param<0> = [networkManager,11,24,38]; ]
+    function initialize(networkManager) as Void {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_11_40_18_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 12 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 13 8 ]
+        %tmp.4 = lgetv %networkManager;
+        symbol [ networkManager %tmp.4 13 26 40 ];
+        symbol [ _networkManager ? 13 8 23 ];
+        putv self :_networkManager %tmp.4;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 14 8 ]
+        %tmp.5 = newa 0;
+        symbol [ _folders ? 14 8 16 ];
+        putv self :_folders %tmp.5;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 15 8 ]
+        %tmp.6 = "Loading...";
+        symbol [ _statusText ? 15 8 19 ];
+        putv self :_statusText %tmp.6;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 16 8 ]
+        %tmp.7 = 0;
+        symbol [ _selectedIndex ? 16 8 22 ];
+        putv self :_selectedIndex %tmp.7;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 17 8 ]
+        symbol [ _networkManager %tmp.9 17 8 23 ];
+        %tmp.9 = getv ? :_networkManager;
+        symbol [ fetchFolders %tmp.10 17 24 36 ];
+        %tmp.10 = getv function %tmp.9 :fetchFolders;
+        %tmp.11 = self;
+        symbol [ method %tmp.12 17 37 43 ];
+        %tmp.12 = getv function %tmp.11 :method;
+        %tmp.14 = const :onFoldersFetched;
+        symbol [ onFoldersFetched %tmp.14 17 45 61 const ];
+        %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.14);
+        invoke %tmp.9 %tmp.10(%tmp.15);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_11_40_18_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 20; @symbol_functiondef = [onLayout,20,13,21]; @symbol_param<0> = [dc,20,22,24]; ]
+    function onLayout(dc) {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 23; @symbol_functiondef = [onUpdate,23,13,21]; @symbol_param<0> = [dc,23,22,24]; ]
+    function onUpdate(dc) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 24 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 24 8 10 ];
+        symbol [ setColor %tmp.2 24 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 24 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 24 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 24 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 24 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 25 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 25 8 10 ];
+        symbol [ clear %tmp.8 25 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 26 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 26 12 13 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 26 16 18 ];
+        symbol [ getWidth %tmp.10 26 19 27 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %w.1 %tmp.11;
+        symbol [ w %w.1 26 12 13 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 27 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_stop" ]
+        %h.2 = local;
+        symbol [ h %h.2 27 12 13 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 27 16 18 ];
+        symbol [ getHeight %tmp.13 27 19 28 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %h.2 %tmp.14;
+        symbol [ h %h.2 27 12 13 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 29 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_8_33_8_if_stmt:
+        symbol [ _folders %tmp.16 29 12 20 ];
+        %tmp.16 = getv ? :_folders;
+        symbol [ size %tmp.17 29 21 25 ];
+        %tmp.17 = getv function %tmp.16 :size;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        %tmp.19 = 0;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_8_33_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_8_33_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_34_33_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 30 12 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 30 12 14 ];
+        symbol [ drawText %tmp.22 30 15 23 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.23 = lgetv %w.1;
+        symbol [ w %tmp.23 30 24 25 ];
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = lgetv %h.2;
+        symbol [ h %tmp.26 30 31 32 ];
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        symbol [ Graphics %tmp.29 30 38 46 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.30 30 47 57 ];
+        %tmp.30 = getv %tmp.29 :FONT_SMALL;
+        symbol [ _statusText %tmp.32 30 59 70 ];
+        %tmp.32 = getv ? :_statusText;
+        symbol [ Graphics %tmp.33 31 16 24 ];
+        %tmp.33 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.34 31 25 44 ];
+        %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.35 31 47 55 ];
+        %tmp.35 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.36 31 56 76 ];
+        %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_VCENTER;
+        %tmp.37 = bitor %tmp.34 %tmp.36;
+        invoke %tmp.21 %tmp.22(%tmp.25, %tmp.28, %tmp.30, %tmp.32, %tmp.37);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 32 12 ]
+        ret ?;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_34_33_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_8_33_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_29_8_33_8_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 35 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_stop" ]
+        %folder.3 = local;
+        symbol [ folder %folder.3 35 12 18 ];
+        symbol [ _folders %tmp.39 35 21 29 ];
+        %tmp.39 = getv ? :_folders;
+        symbol [ _selectedIndex %tmp.41 35 30 44 ];
+        %tmp.41 = getv ? :_selectedIndex;
+        %tmp.42 = agetv %tmp.39 %tmp.41;
+        lputv %folder.3 %tmp.42;
+        symbol [ folder %folder.3 35 12 18 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 36 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_stop" ]
+        %title.4 = local;
+        symbol [ title %title.4 36 12 17 ];
+        %tmp.43 = lgetv %folder.3;
+        symbol [ folder %tmp.43 36 20 26 ];
+        %tmp.44 = "title";
+        %tmp.45 = agetv %tmp.43 %tmp.44;
+        lputv %title.4 %tmp.45;
+        symbol [ title %title.4 36 12 17 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 37 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_8_37_47_if_stmt:
+        %tmp.46 = lgetv %title.4;
+        symbol [ title %tmp.46 37 12 17 ];
+        %tmp.47 = null;
+        %tmp.48 = eq %tmp.46 %tmp.47;
+        bf %tmp.48 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_8_37_47_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_8_37_47_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_27_37_47_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 37 29 ]
+        %tmp.49 = "Folder";
+        lputv %title.4 %tmp.49;
+        symbol [ title %title.4 37 29 34 ];
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_27_37_47_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_8_37_47_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_37_8_37_47_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 39 8 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 39 8 10 ];
+        symbol [ setColor %tmp.51 39 11 19 ];
+        %tmp.51 = getv function %tmp.50 :setColor;
+        symbol [ Graphics %tmp.52 39 20 28 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.53 39 29 42 ];
+        %tmp.53 = getv %tmp.52 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.54 39 44 52 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.55 39 53 64 ];
+        %tmp.55 = getv %tmp.54 :COLOR_BLACK;
+        invoke %tmp.50 %tmp.51(%tmp.53, %tmp.55);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 40 8 ]
+        %tmp.56 = lgetv %dc;
+        symbol [ dc %tmp.56 40 8 10 ];
+        symbol [ drawText %tmp.57 40 11 19 ];
+        %tmp.57 = getv function %tmp.56 :drawText;
+        %tmp.58 = lgetv %w.1;
+        symbol [ w %tmp.58 40 20 21 ];
+        %tmp.59 = 2;
+        %tmp.60 = div %tmp.58 %tmp.59;
+        %tmp.61 = lgetv %h.2;
+        symbol [ h %tmp.61 40 27 28 ];
+        %tmp.62 = 4;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        symbol [ Graphics %tmp.64 40 34 42 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.65 40 43 53 ];
+        %tmp.65 = getv %tmp.64 :FONT_XTINY;
+        symbol [ _selectedIndex %tmp.67 41 13 27 ];
+        %tmp.67 = getv ? :_selectedIndex;
+        %tmp.68 = 1;
+        %tmp.69 = add %tmp.67 %tmp.68;
+        %tmp.70 = "/";
+        %tmp.71 = add %tmp.69 %tmp.70;
+        symbol [ _folders %tmp.73 41 41 49 ];
+        %tmp.73 = getv ? :_folders;
+        symbol [ size %tmp.74 41 50 54 ];
+        %tmp.74 = getv function %tmp.73 :size;
+        %tmp.75 = invoke %tmp.73 %tmp.74();
+        %tmp.76 = add %tmp.71 %tmp.75;
+        symbol [ Graphics %tmp.77 42 12 20 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.78 42 21 40 ];
+        %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.79 42 43 51 ];
+        %tmp.79 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.80 42 52 72 ];
+        %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_VCENTER;
+        %tmp.81 = bitor %tmp.78 %tmp.80;
+        invoke %tmp.56 %tmp.57(%tmp.60, %tmp.63, %tmp.65, %tmp.76, %tmp.81);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 44 8 ]
+        %tmp.82 = lgetv %dc;
+        symbol [ dc %tmp.82 44 8 10 ];
+        symbol [ setColor %tmp.83 44 11 19 ];
+        %tmp.83 = getv function %tmp.82 :setColor;
+        symbol [ Graphics %tmp.84 44 20 28 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.85 44 29 40 ];
+        %tmp.85 = getv %tmp.84 :COLOR_WHITE;
+        symbol [ Graphics %tmp.86 44 42 50 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.87 44 51 62 ];
+        %tmp.87 = getv %tmp.86 :COLOR_BLACK;
+        invoke %tmp.82 %tmp.83(%tmp.85, %tmp.87);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 45 8 ]
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 45 8 10 ];
+        symbol [ drawText %tmp.89 45 11 19 ];
+        %tmp.89 = getv function %tmp.88 :drawText;
+        %tmp.90 = lgetv %w.1;
+        symbol [ w %tmp.90 45 20 21 ];
+        %tmp.91 = 2;
+        %tmp.92 = div %tmp.90 %tmp.91;
+        %tmp.93 = lgetv %h.2;
+        symbol [ h %tmp.93 45 27 28 ];
+        %tmp.94 = 2;
+        %tmp.95 = div %tmp.93 %tmp.94;
+        symbol [ Graphics %tmp.96 45 34 42 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.97 45 43 53 ];
+        %tmp.97 = getv %tmp.96 :FONT_SMALL;
+        %tmp.98 = lgetv %title.4;
+        symbol [ title %tmp.98 45 55 60 ];
+        symbol [ Graphics %tmp.99 46 12 20 ];
+        %tmp.99 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.100 46 21 40 ];
+        %tmp.100 = getv %tmp.99 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.101 46 43 51 ];
+        %tmp.101 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.102 46 52 72 ];
+        %tmp.102 = getv %tmp.101 :TEXT_JUSTIFY_VCENTER;
+        %tmp.103 = bitor %tmp.100 %tmp.102;
+        invoke %tmp.88 %tmp.89(%tmp.92, %tmp.95, %tmp.97, %tmp.98, %tmp.103);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 48 8 ]
+        %tmp.104 = lgetv %dc;
+        symbol [ dc %tmp.104 48 8 10 ];
+        symbol [ setColor %tmp.105 48 11 19 ];
+        %tmp.105 = getv function %tmp.104 :setColor;
+        symbol [ Graphics %tmp.106 48 20 28 ];
+        %tmp.106 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.107 48 29 42 ];
+        %tmp.107 = getv %tmp.106 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.108 48 44 52 ];
+        %tmp.108 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.109 48 53 64 ];
+        %tmp.109 = getv %tmp.108 :COLOR_BLACK;
+        invoke %tmp.104 %tmp.105(%tmp.107, %tmp.109);
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 49 8 ]
+        %tmp.110 = lgetv %dc;
+        symbol [ dc %tmp.110 49 8 10 ];
+        symbol [ drawText %tmp.111 49 11 19 ];
+        %tmp.111 = getv function %tmp.110 :drawText;
+        %tmp.112 = lgetv %w.1;
+        symbol [ w %tmp.112 49 20 21 ];
+        %tmp.113 = 2;
+        %tmp.114 = div %tmp.112 %tmp.113;
+        %tmp.115 = lgetv %h.2;
+        symbol [ h %tmp.115 49 27 28 ];
+        %tmp.116 = 3;
+        %tmp.117 = mul %tmp.115 %tmp.116;
+        %tmp.118 = 4;
+        %tmp.119 = div %tmp.117 %tmp.118;
+        symbol [ Graphics %tmp.120 49 38 46 ];
+        %tmp.120 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.121 49 47 57 ];
+        %tmp.121 = getv %tmp.120 :FONT_XTINY;
+        %tmp.122 = "Select folder";
+        symbol [ Graphics %tmp.123 50 12 20 ];
+        %tmp.123 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.124 50 21 40 ];
+        %tmp.124 = getv %tmp.123 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.125 50 43 51 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.126 50 52 72 ];
+        %tmp.126 = getv %tmp.125 :TEXT_JUSTIFY_VCENTER;
+        %tmp.127 = bitor %tmp.124 %tmp.126;
+        invoke %tmp.110 %tmp.111(%tmp.114, %tmp.119, %tmp.121, %tmp.122, %tmp.127);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_23_26_51_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 53; @symbol_functiondef = [onFoldersFetched,53,13,29]; @symbol_param<0> = [responseCode,53,30,42]; @symbol_param<1> = [data,53,44,48]; ]
+    function onFoldersFetched(responseCode, data) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_53_50_63_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 54 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_stmt:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_12_54_43_begin:
+        %tmp.1 = lgetv %responseCode;
+        symbol [ responseCode %tmp.1 54 12 24 ];
+        %tmp.2 = 200;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_else_false;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_35_54_43_true:
+        %tmp.4 = lgetv %data;
+        symbol [ data %tmp.4 54 35 39 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        push %tmp.6;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_35_54_43_end:
+        %tmp.7 = phi [%tmp.3 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_12_54_43_begin] [%tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_35_54_43_true] [%tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_35_54_43_end];
+        bf %tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_else_false;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_49_58_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 56 12 ]
+        %tmp.8 = lgetv %data;
+        symbol [ data %tmp.8 56 23 27 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        symbol [ _folders ? 56 12 20 ];
+        putv self :_folders %tmp.9;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 57 12 ]
+        %tmp.10 = 0;
+        symbol [ _selectedIndex ? 57 12 26 ];
+        putv self :_selectedIndex %tmp.10;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_49_58_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_else_false:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_58_15_61_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 59 12 ]
+        %tmp.11 = "Error: ";
+        %tmp.12 = lgetv %responseCode;
+        symbol [ responseCode %tmp.12 59 38 50 ];
+        %tmp.13 = add %tmp.11 %tmp.12;
+        symbol [ _statusText ? 59 12 23 ];
+        putv self :_statusText %tmp.13;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 60 12 ]
+        symbol [ System %tmp.14 60 12 18 ];
+        %tmp.14 = getm $.Toybox.System;
+        symbol [ println %tmp.15 60 19 26 ];
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "Error fetching folders: ";
+        %tmp.17 = lgetv %responseCode;
+        symbol [ responseCode %tmp.17 60 56 68 ];
+        %tmp.18 = add %tmp.16 %tmp.17;
+        invoke %tmp.14 %tmp.15(%tmp.18);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_58_15_61_8_stop:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_54_8_61_8_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 62 8 ]
+        symbol [ WatchUi %tmp.19 62 8 15 ];
+        %tmp.19 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.20 62 16 29 ];
+        %tmp.20 = getv function %tmp.19 :requestUpdate;
+        invoke %tmp.19 %tmp.20();
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_53_50_63_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 65; @symbol_functiondef = [getSelectedFolder,65,13,30]; ]
+    function getSelectedFolder() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_65_33_70_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 66 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_8_68_8_if_stmt:
+        symbol [ _folders %tmp.2 66 12 20 ];
+        %tmp.2 = getv ? :_folders;
+        symbol [ size %tmp.3 66 21 25 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 0;
+        %tmp.6 = gt %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_8_68_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_8_68_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_33_68_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 67 12 ]
+        symbol [ _folders %tmp.8 67 19 27 ];
+        %tmp.8 = getv ? :_folders;
+        symbol [ _selectedIndex %tmp.10 67 28 42 ];
+        %tmp.10 = getv ? :_selectedIndex;
+        %tmp.11 = agetv %tmp.8 %tmp.10;
+        ret %tmp.11;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_33_68_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_8_68_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_66_8_68_8_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 69 8 ]
+        %tmp.12 = null;
+        ret %tmp.12;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_65_33_70_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 72; @symbol_functiondef = [scrollUp,72,13,21]; ]
+    function scrollUp() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_72_24_77_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 73 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_8_76_8_if_stmt:
+        symbol [ _folders %tmp.2 73 12 20 ];
+        %tmp.2 = getv ? :_folders;
+        symbol [ size %tmp.3 73 21 25 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 0;
+        %tmp.6 = gt %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_8_76_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_8_76_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_33_76_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 74 12 ]
+        symbol [ _selectedIndex %tmp.8 74 30 44 ];
+        %tmp.8 = getv ? :_selectedIndex;
+        %tmp.9 = 1;
+        %tmp.10 = sub %tmp.8 %tmp.9;
+        symbol [ _folders %tmp.12 74 51 59 ];
+        %tmp.12 = getv ? :_folders;
+        symbol [ size %tmp.13 74 60 64 ];
+        %tmp.13 = getv function %tmp.12 :size;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = add %tmp.10 %tmp.14;
+        symbol [ _folders %tmp.17 74 70 78 ];
+        %tmp.17 = getv ? :_folders;
+        symbol [ size %tmp.18 74 79 83 ];
+        %tmp.18 = getv function %tmp.17 :size;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = mod %tmp.15 %tmp.19;
+        symbol [ _selectedIndex ? 74 12 26 ];
+        putv self :_selectedIndex %tmp.20;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 75 12 ]
+        symbol [ WatchUi %tmp.21 75 12 19 ];
+        %tmp.21 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.22 75 20 33 ];
+        %tmp.22 = getv function %tmp.21 :requestUpdate;
+        invoke %tmp.21 %tmp.22();
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_33_76_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_8_76_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_73_8_76_8_if_end:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_72_24_77_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 79; @symbol_functiondef = [scrollDown,79,13,23]; ]
+    function scrollDown() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_79_26_84_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 80 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_8_83_8_if_stmt:
+        symbol [ _folders %tmp.2 80 12 20 ];
+        %tmp.2 = getv ? :_folders;
+        symbol [ size %tmp.3 80 21 25 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 0;
+        %tmp.6 = gt %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_8_83_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_8_83_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_33_83_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 81 12 ]
+        symbol [ _selectedIndex %tmp.8 81 30 44 ];
+        %tmp.8 = getv ? :_selectedIndex;
+        %tmp.9 = 1;
+        %tmp.10 = add %tmp.8 %tmp.9;
+        symbol [ _folders %tmp.12 81 52 60 ];
+        %tmp.12 = getv ? :_folders;
+        symbol [ size %tmp.13 81 61 65 ];
+        %tmp.13 = getv function %tmp.12 :size;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = mod %tmp.10 %tmp.14;
+        symbol [ _selectedIndex ? 81 12 26 ];
+        putv self :_selectedIndex %tmp.15;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 82 12 ]
+        symbol [ WatchUi %tmp.16 82 12 19 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.17 82 20 33 ];
+        %tmp.17 = getv function %tmp.16 :requestUpdate;
+        invoke %tmp.16 %tmp.17();
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_33_83_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_8_83_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_80_8_83_8_if_end:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_79_26_84_4_stop:
+    }
+}
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 87; @symbol_classdef = [FolderListDelegate,87,6,24]; @symbol_extends<0> = [WatchUi,87,33,40]; @symbol_extends<1> = [BehaviorDelegate,87,41,57]; ]
+class FolderListDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 87; ]
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 87; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 88; @position = 15; @symbol_vardef = [_view,88,15,20]; ]
+    protected
+    var _view;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 89; @position = 15; @symbol_vardef = [_networkManager,89,15,30]; ]
+    protected
+    var _networkManager;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 91; @symbol_functiondef = [initialize,91,13,23]; @symbol_param<0> = [view,91,24,28]; @symbol_param<1> = [networkManager,91,30,44]; ]
+    function initialize(view, networkManager) as Void {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_91_46_95_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 92 8 ]
+        symbol [ BehaviorDelegate %tmp.2 92 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 92 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 93 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 93 16 20 ];
+        symbol [ _view ? 93 8 13 ];
+        putv self :_view %tmp.4;
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 94 8 ]
+        %tmp.5 = lgetv %networkManager;
+        symbol [ networkManager %tmp.5 94 26 40 ];
+        symbol [ _networkManager ? 94 8 23 ];
+        putv self :_networkManager %tmp.5;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_91_46_95_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 97; @symbol_functiondef = [onPreviousPage,97,13,27]; ]
+    function onPreviousPage() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_97_30_100_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 98 8 ]
+        symbol [ _view %tmp.2 98 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ scrollUp %tmp.3 98 14 22 ];
+        %tmp.3 = getv function %tmp.2 :scrollUp;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 99 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_97_30_100_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 102; @symbol_functiondef = [onNextPage,102,13,23]; ]
+    function onNextPage() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_102_26_105_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 103 8 ]
+        symbol [ _view %tmp.2 103 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ scrollDown %tmp.3 103 14 24 ];
+        %tmp.3 = getv function %tmp.2 :scrollDown;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 104 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_102_26_105_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 107; @symbol_functiondef = [onSelect,107,13,21]; ]
+    function onSelect() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_107_24_120_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 108 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_107_24_120_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_107_24_120_4_stop" ]
+        %folder.1 = local;
+        symbol [ folder %folder.1 108 12 18 ];
+        symbol [ _view %tmp.2 108 21 26 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ getSelectedFolder %tmp.3 108 27 44 ];
+        %tmp.3 = getv function %tmp.2 :getSelectedFolder;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %folder.1 %tmp.4;
+        symbol [ folder %folder.1 108 12 18 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 109 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_8_118_8_if_stmt:
+        %tmp.5 = lgetv %folder.1;
+        symbol [ folder %tmp.5 109 12 18 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_8_118_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_8_118_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 110 12 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_stop" ]
+        %folderId.2 = local;
+        symbol [ folderId %folderId.2 110 16 24 ];
+        %tmp.8 = lgetv %folder.1;
+        symbol [ folder %tmp.8 110 27 33 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        %tmp.10 = "id";
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        lputv %folderId.2 %tmp.11;
+        symbol [ folderId %folderId.2 110 16 24 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 111 12 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_stop" ]
+        %folderTitle.3 = local;
+        symbol [ folderTitle %folderTitle.3 111 16 27 ];
+        %tmp.12 = lgetv %folder.1;
+        symbol [ folder %tmp.12 111 30 36 ];
+        %tmp.13 = as %tmp.12 { (!Null) };
+        %tmp.14 = "title";
+        %tmp.15 = agetv %tmp.13 %tmp.14;
+        lputv %folderTitle.3 %tmp.15;
+        symbol [ folderTitle %folderTitle.3 111 16 27 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 112 12 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_stop" ]
+        %routineView.4 = local;
+        symbol [ routineView %routineView.4 112 16 27 ];
+        symbol [ RoutineListView %tmp.19 112 34 49 ];
+        %tmp.19 = getv ? :RoutineListView;
+        symbol [ _networkManager %tmp.21 112 50 65 ];
+        %tmp.21 = getv ? :_networkManager;
+        %tmp.22 = lgetv %folderId.2;
+        symbol [ folderId %tmp.22 112 67 75 ];
+        %tmp.23 = lgetv %folderTitle.3;
+        symbol [ folderTitle %tmp.23 112 77 88 ];
+        %tmp.16 = newc %tmp.19 (%tmp.21, %tmp.22, %tmp.23);
+        lputv %routineView.4 %tmp.16;
+        symbol [ routineView %routineView.4 112 16 27 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 113 12 ]
+        symbol [ WatchUi %tmp.24 113 12 19 ];
+        %tmp.24 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.25 113 20 28 ];
+        %tmp.25 = getv function %tmp.24 :pushView;
+        %tmp.26 = lgetv %routineView.4;
+        symbol [ routineView %tmp.26 114 16 27 ];
+        symbol [ RoutineListDelegate %tmp.30 115 20 39 ];
+        %tmp.30 = getv ? :RoutineListDelegate;
+        %tmp.31 = lgetv %routineView.4;
+        symbol [ routineView %tmp.31 115 40 51 ];
+        %tmp.27 = newc %tmp.30 (%tmp.31);
+        symbol [ WatchUi %tmp.32 116 16 23 ];
+        %tmp.32 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.33 116 24 34 ];
+        %tmp.33 = getv %tmp.32 :SLIDE_LEFT;
+        invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.33);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_28_118_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_8_118_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_109_8_118_8_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" 119 8 ]
+        %tmp.34 = true;
+        ret %tmp.34;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_FolderListView_mc_107_24_120_4_stop:
+    }
+}
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc"; @line = 1; ]
+<init> {
+}

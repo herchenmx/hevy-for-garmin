@@ -11,139 +11,287 @@ class NetworkManager {
     static
     <init> {
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 5; @position = 15; @symbol_vardef = [_apiKey,5,15,22]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 5; @position = 15; @symbol_vardef = [_hevyApiKey,5,15,26]; ]
     protected
-    var _apiKey;
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; @symbol_param<0> = [apiKey,7,24,30]; ]
-    function initialize(apiKey) as Void {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_7_32_9_4_start:
+    var _hevyApiKey;
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; @symbol_param<0> = [hevyApiKey,7,24,34]; ]
+    function initialize(hevyApiKey) as Void {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_7_36_9_4_start:
 [ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 8 8 ]
-        %tmp.1 = lgetv %apiKey;
-        symbol [ apiKey %tmp.1 8 18 24 ];
-        symbol [ _apiKey ? 8 8 15 ];
-        putv self :_apiKey %tmp.1;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_7_32_9_4_stop:
+        %tmp.1 = lgetv %hevyApiKey;
+        symbol [ hevyApiKey %tmp.1 8 22 32 ];
+        symbol [ _hevyApiKey ? 8 8 19 ];
+        putv self :_hevyApiKey %tmp.1;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_7_36_9_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 11; @symbol_functiondef = [fetchRoutines,11,13,26]; @symbol_param<0> = [callback,11,27,35]; ]
-    function fetchRoutines(callback) {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_11_37_21_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 12 8 ]
-        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_11_37_21_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_11_37_21_4_stop" ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 13; @symbol_functiondef = [supabaseGet,13,20,31]; @symbol_param<0> = [path,13,32,36]; @symbol_param<1> = [callback,13,38,46]; ]
+    protected
+    function supabaseGet(path, callback) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_13_48_24_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 14 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_13_48_24_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_13_48_24_4_stop" ]
         %url.1 = local;
-        symbol [ url %url.1 12 12 15 ];
-        %tmp.1 = "https://api.hevy.com/v1/routines";
-        lputv %url.1 %tmp.1;
-        symbol [ url %url.1 12 12 15 ];
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 13 8 ]
-        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_11_37_21_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_11_37_21_4_stop" ]
+        symbol [ url %url.1 14 12 15 ];
+        symbol [ AppConstants %tmp.2 14 18 30 ];
+        %tmp.2 = getv ? :AppConstants;
+        symbol [ SUPABASE_URL %tmp.3 14 31 43 ];
+        %tmp.3 = getv %tmp.2 :SUPABASE_URL;
+        %tmp.4 = lgetv %path;
+        symbol [ path %tmp.4 14 46 50 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        lputv %url.1 %tmp.5;
+        symbol [ url %url.1 14 12 15 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 15 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_13_48_24_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_13_48_24_4_stop" ]
         %options.2 = local;
-        symbol [ options %options.2 13 12 19 ];
-        %tmp.2 = newd 3;
-        %tmp.4 = const :method;
-        symbol [ method %tmp.4 14 13 19 const ];
-        symbol [ Comm %tmp.5 14 23 27 ];
-        %tmp.5 = getm $.Toybox.Communications;
-        symbol [ HTTP_REQUEST_METHOD_GET %tmp.6 14 28 51 ];
-        %tmp.6 = getv %tmp.5 :HTTP_REQUEST_METHOD_GET;
-        %tmp.7 = dup %tmp.2;
-        %tmp.8 = aputv %tmp.7 %tmp.4 %tmp.6;
-        %tmp.10 = const :headers;
-        symbol [ headers %tmp.10 15 13 20 const ];
-        %tmp.11 = newd 1;
-        %tmp.12 = "api-key";
-        symbol [ _apiKey %tmp.14 16 29 36 ];
-        %tmp.14 = getv ? :_apiKey;
-        %tmp.15 = dup %tmp.11;
-        %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
-        %tmp.17 = dup %tmp.8;
-        %tmp.18 = aputv %tmp.17 %tmp.10 %tmp.16;
-        %tmp.20 = const :responseType;
-        symbol [ responseType %tmp.20 18 13 25 const ];
-        symbol [ Comm %tmp.21 18 29 33 ];
-        %tmp.21 = getm $.Toybox.Communications;
-        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.22 18 34 65 ];
-        %tmp.22 = getv %tmp.21 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
-        %tmp.23 = dup %tmp.18;
-        %tmp.24 = aputv %tmp.23 %tmp.20 %tmp.22;
-        lputv %options.2 %tmp.24;
-        symbol [ options %options.2 13 12 19 ];
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 20 8 ]
-        symbol [ Comm %tmp.25 20 8 12 ];
-        %tmp.25 = getm $.Toybox.Communications;
-        symbol [ makeWebRequest %tmp.26 20 13 27 ];
-        %tmp.26 = getv function %tmp.25 :makeWebRequest;
-        %tmp.27 = lgetv %url.1;
-        symbol [ url %tmp.27 20 28 31 ];
-        %tmp.28 = null;
-        %tmp.29 = lgetv %options.2;
-        symbol [ options %tmp.29 20 39 46 ];
-        %tmp.30 = lgetv %callback;
-        symbol [ callback %tmp.30 20 48 56 ];
-        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28, %tmp.29, %tmp.30);
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_11_37_21_4_stop:
+        symbol [ options %options.2 15 12 19 ];
+        %tmp.6 = newd 3;
+        %tmp.8 = const :method;
+        symbol [ method %tmp.8 16 13 19 const ];
+        symbol [ Comm %tmp.9 16 23 27 ];
+        %tmp.9 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_GET %tmp.10 16 28 51 ];
+        %tmp.10 = getv %tmp.9 :HTTP_REQUEST_METHOD_GET;
+        %tmp.11 = dup %tmp.6;
+        %tmp.12 = aputv %tmp.11 %tmp.8 %tmp.10;
+        %tmp.14 = const :headers;
+        symbol [ headers %tmp.14 17 13 20 const ];
+        %tmp.15 = newd 2;
+        %tmp.16 = "apikey";
+        symbol [ AppConstants %tmp.18 18 28 40 ];
+        %tmp.18 = getv ? :AppConstants;
+        symbol [ SUPABASE_KEY %tmp.19 18 41 53 ];
+        %tmp.19 = getv %tmp.18 :SUPABASE_KEY;
+        %tmp.20 = dup %tmp.15;
+        %tmp.21 = aputv %tmp.20 %tmp.16 %tmp.19;
+        %tmp.22 = "Authorization";
+        %tmp.23 = "Bearer ";
+        symbol [ AppConstants %tmp.25 19 47 59 ];
+        %tmp.25 = getv ? :AppConstants;
+        symbol [ SUPABASE_KEY %tmp.26 19 60 72 ];
+        %tmp.26 = getv %tmp.25 :SUPABASE_KEY;
+        %tmp.27 = add %tmp.23 %tmp.26;
+        %tmp.28 = dup %tmp.21;
+        %tmp.29 = aputv %tmp.28 %tmp.22 %tmp.27;
+        %tmp.30 = dup %tmp.12;
+        %tmp.31 = aputv %tmp.30 %tmp.14 %tmp.29;
+        %tmp.33 = const :responseType;
+        symbol [ responseType %tmp.33 21 13 25 const ];
+        symbol [ Comm %tmp.34 21 29 33 ];
+        %tmp.34 = getm $.Toybox.Communications;
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.35 21 34 65 ];
+        %tmp.35 = getv %tmp.34 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.36 = dup %tmp.31;
+        %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+        lputv %options.2 %tmp.37;
+        symbol [ options %options.2 15 12 19 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 23 8 ]
+        symbol [ Comm %tmp.38 23 8 12 ];
+        %tmp.38 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.39 23 13 27 ];
+        %tmp.39 = getv function %tmp.38 :makeWebRequest;
+        %tmp.40 = lgetv %url.1;
+        symbol [ url %tmp.40 23 28 31 ];
+        %tmp.41 = null;
+        %tmp.42 = lgetv %options.2;
+        symbol [ options %tmp.42 23 39 46 ];
+        %tmp.43 = lgetv %callback;
+        symbol [ callback %tmp.43 23 48 56 ];
+        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.42, %tmp.43);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_13_48_24_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 23; @symbol_functiondef = [postWorkout,23,13,24]; @symbol_param<0> = [workoutData,23,25,36]; @symbol_param<1> = [callback,23,38,46]; ]
-    function postWorkout(workoutData, callback) {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_23_48_34_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 24 8 ]
-        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_23_48_34_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_23_48_34_4_stop" ]
-        %url.1 = local;
-        symbol [ url %url.1 24 12 15 ];
-        %tmp.1 = "https://api.hevy.com/v1/workouts";
-        lputv %url.1 %tmp.1;
-        symbol [ url %url.1 24 12 15 ];
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 25 8 ]
-        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_23_48_34_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_23_48_34_4_stop" ]
-        %options.2 = local;
-        symbol [ options %options.2 25 12 19 ];
-        %tmp.2 = newd 3;
-        %tmp.4 = const :method;
-        symbol [ method %tmp.4 26 13 19 const ];
-        symbol [ Comm %tmp.5 26 23 27 ];
-        %tmp.5 = getm $.Toybox.Communications;
-        symbol [ HTTP_REQUEST_METHOD_POST %tmp.6 26 28 52 ];
-        %tmp.6 = getv %tmp.5 :HTTP_REQUEST_METHOD_POST;
-        %tmp.7 = dup %tmp.2;
-        %tmp.8 = aputv %tmp.7 %tmp.4 %tmp.6;
-        %tmp.10 = const :headers;
-        symbol [ headers %tmp.10 27 13 20 const ];
-        %tmp.11 = newd 2;
-        %tmp.12 = "api-key";
-        symbol [ _apiKey %tmp.14 28 29 36 ];
-        %tmp.14 = getv ? :_apiKey;
-        %tmp.15 = dup %tmp.11;
-        %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
-        %tmp.17 = "Content-Type";
-        %tmp.18 = "application/json";
-        %tmp.19 = dup %tmp.16;
-        %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
-        %tmp.21 = dup %tmp.8;
-        %tmp.22 = aputv %tmp.21 %tmp.10 %tmp.20;
-        %tmp.24 = const :responseType;
-        symbol [ responseType %tmp.24 31 13 25 const ];
-        symbol [ Comm %tmp.25 31 29 33 ];
-        %tmp.25 = getm $.Toybox.Communications;
-        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.26 31 34 65 ];
-        %tmp.26 = getv %tmp.25 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
-        %tmp.27 = dup %tmp.22;
-        %tmp.28 = aputv %tmp.27 %tmp.24 %tmp.26;
-        lputv %options.2 %tmp.28;
-        symbol [ options %options.2 25 12 19 ];
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 27; @symbol_functiondef = [fetchFolders,27,13,25]; @symbol_param<0> = [callback,27,26,34]; ]
+    function fetchFolders(callback) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_27_36_29_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 28 8 ]
+        %tmp.1 = self;
+        symbol [ supabaseGet %tmp.2 28 8 19 ];
+        %tmp.2 = getv function %tmp.1 :supabaseGet;
+        %tmp.3 = "/rest/v1/routine_folders?select=id,index,title&order=index.asc";
+        %tmp.4 = lgetv %callback;
+        symbol [ callback %tmp.4 28 86 94 ];
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_27_36_29_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 32; @symbol_functiondef = [fetchRoutinesByFolder,32,13,34]; @symbol_param<0> = [folderId,32,35,43]; @symbol_param<1> = [callback,32,45,53]; ]
+    function fetchRoutinesByFolder(folderId, callback) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_32_55_34_4_start:
 [ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 33 8 ]
-        symbol [ Comm %tmp.29 33 8 12 ];
+        %tmp.1 = self;
+        symbol [ supabaseGet %tmp.2 33 8 19 ];
+        %tmp.2 = getv function %tmp.1 :supabaseGet;
+        %tmp.3 = "/rest/v1/routines?select=id,title,folder_id&folder_id=eq.";
+        %tmp.4 = lgetv %folderId;
+        symbol [ folderId %tmp.4 33 82 90 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        %tmp.6 = "&order=title.asc";
+        %tmp.7 = add %tmp.5 %tmp.6;
+        %tmp.8 = lgetv %callback;
+        symbol [ callback %tmp.8 33 113 121 ];
+        invoke %tmp.1 %tmp.2(%tmp.7, %tmp.8);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_32_55_34_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 37; @symbol_functiondef = [fetchRoutine,37,13,25]; @symbol_param<0> = [routineId,37,26,35]; @symbol_param<1> = [callback,37,37,45]; ]
+    function fetchRoutine(routineId, callback) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_37_47_39_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 38 8 ]
+        %tmp.1 = self;
+        symbol [ supabaseGet %tmp.2 38 8 19 ];
+        %tmp.2 = getv function %tmp.1 :supabaseGet;
+        %tmp.3 = "/rest/v1/routines?id=eq.";
+        %tmp.4 = lgetv %routineId;
+        symbol [ routineId %tmp.4 38 49 58 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        %tmp.6 = lgetv %callback;
+        symbol [ callback %tmp.6 38 60 68 ];
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.6);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_37_47_39_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 42; @symbol_functiondef = [triggerSync,42,13,24]; @symbol_param<0> = [callback,42,25,33]; ]
+    function triggerSync(callback) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_42_35_54_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 43 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_42_35_54_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_42_35_54_4_stop" ]
+        %url.1 = local;
+        symbol [ url %url.1 43 12 15 ];
+        symbol [ AppConstants %tmp.2 43 18 30 ];
+        %tmp.2 = getv ? :AppConstants;
+        symbol [ SUPABASE_URL %tmp.3 43 31 43 ];
+        %tmp.3 = getv %tmp.2 :SUPABASE_URL;
+        %tmp.4 = "/functions/v1/sync-hevy";
+        %tmp.5 = add %tmp.3 %tmp.4;
+        lputv %url.1 %tmp.5;
+        symbol [ url %url.1 43 12 15 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 44 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_42_35_54_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_42_35_54_4_stop" ]
+        %options.2 = local;
+        symbol [ options %options.2 44 12 19 ];
+        %tmp.6 = newd 3;
+        %tmp.8 = const :method;
+        symbol [ method %tmp.8 45 13 19 const ];
+        symbol [ Comm %tmp.9 45 23 27 ];
+        %tmp.9 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_POST %tmp.10 45 28 52 ];
+        %tmp.10 = getv %tmp.9 :HTTP_REQUEST_METHOD_POST;
+        %tmp.11 = dup %tmp.6;
+        %tmp.12 = aputv %tmp.11 %tmp.8 %tmp.10;
+        %tmp.14 = const :headers;
+        symbol [ headers %tmp.14 46 13 20 const ];
+        %tmp.15 = newd 3;
+        %tmp.16 = "apikey";
+        symbol [ AppConstants %tmp.18 47 28 40 ];
+        %tmp.18 = getv ? :AppConstants;
+        symbol [ SUPABASE_KEY %tmp.19 47 41 53 ];
+        %tmp.19 = getv %tmp.18 :SUPABASE_KEY;
+        %tmp.20 = dup %tmp.15;
+        %tmp.21 = aputv %tmp.20 %tmp.16 %tmp.19;
+        %tmp.22 = "Authorization";
+        %tmp.23 = "Bearer ";
+        symbol [ AppConstants %tmp.25 48 47 59 ];
+        %tmp.25 = getv ? :AppConstants;
+        symbol [ SUPABASE_KEY %tmp.26 48 60 72 ];
+        %tmp.26 = getv %tmp.25 :SUPABASE_KEY;
+        %tmp.27 = add %tmp.23 %tmp.26;
+        %tmp.28 = dup %tmp.21;
+        %tmp.29 = aputv %tmp.28 %tmp.22 %tmp.27;
+        %tmp.30 = "Content-Type";
+        %tmp.31 = "application/json";
+        %tmp.32 = dup %tmp.29;
+        %tmp.33 = aputv %tmp.32 %tmp.30 %tmp.31;
+        %tmp.34 = dup %tmp.12;
+        %tmp.35 = aputv %tmp.34 %tmp.14 %tmp.33;
+        %tmp.37 = const :responseType;
+        symbol [ responseType %tmp.37 51 13 25 const ];
+        symbol [ Comm %tmp.38 51 29 33 ];
+        %tmp.38 = getm $.Toybox.Communications;
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.39 51 34 65 ];
+        %tmp.39 = getv %tmp.38 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.40 = dup %tmp.35;
+        %tmp.41 = aputv %tmp.40 %tmp.37 %tmp.39;
+        lputv %options.2 %tmp.41;
+        symbol [ options %options.2 44 12 19 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 53 8 ]
+        symbol [ Comm %tmp.42 53 8 12 ];
+        %tmp.42 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.43 53 13 27 ];
+        %tmp.43 = getv function %tmp.42 :makeWebRequest;
+        %tmp.44 = lgetv %url.1;
+        symbol [ url %tmp.44 53 28 31 ];
+        %tmp.45 = null;
+        %tmp.46 = lgetv %options.2;
+        symbol [ options %tmp.46 53 39 46 ];
+        %tmp.47 = lgetv %callback;
+        symbol [ callback %tmp.47 53 48 56 ];
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45, %tmp.46, %tmp.47);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_42_35_54_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 58; @symbol_functiondef = [postWorkout,58,13,24]; @symbol_param<0> = [workoutData,58,25,36]; @symbol_param<1> = [callback,58,38,46]; ]
+    function postWorkout(workoutData, callback) {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_58_48_69_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 59 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_58_48_69_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_58_48_69_4_stop" ]
+        %url.1 = local;
+        symbol [ url %url.1 59 12 15 ];
+        symbol [ AppConstants %tmp.2 59 18 30 ];
+        %tmp.2 = getv ? :AppConstants;
+        symbol [ HEVY_API_URL %tmp.3 59 31 43 ];
+        %tmp.3 = getv %tmp.2 :HEVY_API_URL;
+        %tmp.4 = "/workouts";
+        %tmp.5 = add %tmp.3 %tmp.4;
+        lputv %url.1 %tmp.5;
+        symbol [ url %url.1 59 12 15 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 60 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_58_48_69_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_58_48_69_4_stop" ]
+        %options.2 = local;
+        symbol [ options %options.2 60 12 19 ];
+        %tmp.6 = newd 3;
+        %tmp.8 = const :method;
+        symbol [ method %tmp.8 61 13 19 const ];
+        symbol [ Comm %tmp.9 61 23 27 ];
+        %tmp.9 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_POST %tmp.10 61 28 52 ];
+        %tmp.10 = getv %tmp.9 :HTTP_REQUEST_METHOD_POST;
+        %tmp.11 = dup %tmp.6;
+        %tmp.12 = aputv %tmp.11 %tmp.8 %tmp.10;
+        %tmp.14 = const :headers;
+        symbol [ headers %tmp.14 62 13 20 const ];
+        %tmp.15 = newd 2;
+        %tmp.16 = "api-key";
+        symbol [ _hevyApiKey %tmp.18 63 29 40 ];
+        %tmp.18 = getv ? :_hevyApiKey;
+        %tmp.19 = dup %tmp.15;
+        %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+        %tmp.21 = "Content-Type";
+        %tmp.22 = "application/json";
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 %tmp.21 %tmp.22;
+        %tmp.25 = dup %tmp.12;
+        %tmp.26 = aputv %tmp.25 %tmp.14 %tmp.24;
+        %tmp.28 = const :responseType;
+        symbol [ responseType %tmp.28 66 13 25 const ];
+        symbol [ Comm %tmp.29 66 29 33 ];
         %tmp.29 = getm $.Toybox.Communications;
-        symbol [ makeWebRequest %tmp.30 33 13 27 ];
-        %tmp.30 = getv function %tmp.29 :makeWebRequest;
-        %tmp.31 = lgetv %url.1;
-        symbol [ url %tmp.31 33 28 31 ];
-        %tmp.32 = lgetv %workoutData;
-        symbol [ workoutData %tmp.32 33 33 44 ];
-        %tmp.33 = lgetv %options.2;
-        symbol [ options %tmp.33 33 46 53 ];
-        %tmp.34 = lgetv %callback;
-        symbol [ callback %tmp.34 33 55 63 ];
-        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32, %tmp.33, %tmp.34);
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_23_48_34_4_stop:
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.30 66 34 65 ];
+        %tmp.30 = getv %tmp.29 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.31 = dup %tmp.26;
+        %tmp.32 = aputv %tmp.31 %tmp.28 %tmp.30;
+        lputv %options.2 %tmp.32;
+        symbol [ options %options.2 60 12 19 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" 68 8 ]
+        symbol [ Comm %tmp.33 68 8 12 ];
+        %tmp.33 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.34 68 13 27 ];
+        %tmp.34 = getv function %tmp.33 :makeWebRequest;
+        %tmp.35 = lgetv %url.1;
+        symbol [ url %tmp.35 68 28 31 ];
+        %tmp.36 = lgetv %workoutData;
+        symbol [ workoutData %tmp.36 68 33 44 ];
+        %tmp.37 = lgetv %options.2;
+        symbol [ options %tmp.37 68 46 53 ];
+        %tmp.38 = lgetv %callback;
+        symbol [ callback %tmp.38 68 55 63 ];
+        invoke %tmp.33 %tmp.34(%tmp.35, %tmp.36, %tmp.37, %tmp.38);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_NetworkManager_mc_58_48_69_4_stop:
     }
 }
 [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc"; @line = 1; ]

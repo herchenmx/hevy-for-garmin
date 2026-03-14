@@ -2,207 +2,384 @@
 <debugInfo>
     <manifest filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="1" lineNum="4" parent="globals/RoutineDetailView" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="2" lineNum="5" parent="globals/HevyApp" pc="268435479" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="3" lineNum="63" parent="globals/RoutineListDelegate" pc="268435498" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="4" lineNum="35" parent="globals/RoutineDetailDelegate" pc="268435517" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/bin/gen/006-B3225-00/source/Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435536" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="6" lineNum="6" parent="globals/RoutineListView" pc="268435560" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="7" lineNum="4" parent="globals/SettingsView" pc="268435579" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="8" lineNum="12" parent="globals/RoutineDetailView" pc="268435598" symbol="onLayout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="9" lineNum="7" parent="globals/RoutineDetailView" pc="268435601" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="9" lineNum="8" parent="globals/RoutineDetailView" pc="268435603" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="9" lineNum="9" parent="globals/RoutineDetailView" pc="268435621" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="15" parent="globals/RoutineDetailView" pc="268435632" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="16" parent="globals/RoutineDetailView" pc="268435636" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="17" parent="globals/RoutineDetailView" pc="268435658" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="18" parent="globals/RoutineDetailView" pc="268435670" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="19" parent="globals/RoutineDetailView" pc="268435677" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="20" parent="globals/RoutineDetailView" pc="268435690" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="21" parent="globals/RoutineDetailView" pc="268435706" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="22" parent="globals/RoutineDetailView" pc="268435713" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="10" lineNum="25" parent="globals/RoutineDetailView" pc="268435723" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="11" lineNum="11" parent="globals/HevyApp" pc="268435782" symbol="onStart"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="12" lineNum="17" parent="globals/HevyApp" pc="268435785" symbol="getInitialView"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="12" lineNum="18" parent="globals/HevyApp" pc="268435789" symbol="getInitialView"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="12" lineNum="19" parent="globals/HevyApp" pc="268435811" symbol="getInitialView"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="12" lineNum="20" parent="globals/HevyApp" pc="268435836" symbol="getInitialView"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="12" lineNum="22" parent="globals/HevyApp" pc="268435876" symbol="getInitialView"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="13" lineNum="7" parent="globals/HevyApp" pc="268435943" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="13" lineNum="8" parent="globals/HevyApp" pc="268435945" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="14" lineNum="14" parent="globals/HevyApp" pc="268435968" symbol="onStop"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="15" lineNum="68" parent="globals/RoutineListDelegate" pc="268435971" symbol="onMenu"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="15" lineNum="69" parent="globals/RoutineListDelegate" pc="268435973" symbol="onMenu"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="16" lineNum="64" parent="globals/RoutineListDelegate" pc="268435976" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="16" lineNum="65" parent="globals/RoutineListDelegate" pc="268435978" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="17" lineNum="40" parent="globals/RoutineDetailDelegate" pc="268435997" symbol="onBack"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="17" lineNum="41" parent="globals/RoutineDetailDelegate" pc="268435999" symbol="onBack"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="17" lineNum="42" parent="globals/RoutineDetailDelegate" pc="268436020" symbol="onBack"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="18" lineNum="36" parent="globals/RoutineDetailDelegate" pc="268436023" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="18" lineNum="37" parent="globals/RoutineDetailDelegate" pc="268436025" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="19" lineNum="25" parent="globals/SetLogger" pc="268436044" symbol="onPostResponse"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="19" lineNum="26" parent="globals/SetLogger" pc="268436046" symbol="onPostResponse"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="19" lineNum="27" parent="globals/SetLogger" pc="268436057" symbol="onPostResponse"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="19" lineNum="29" parent="globals/SetLogger" pc="268436078" symbol="onPostResponse"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="10" parent="globals/SetLogger" pc="268436103" symbol="logSet"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="11" parent="globals/SetLogger" pc="268436107" symbol="logSet"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="15" parent="globals/SetLogger" pc="268436149" symbol="logSet"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="21" lineNum="6" parent="globals/SetLogger" pc="268436170" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="21" lineNum="7" parent="globals/SetLogger" pc="268436172" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="22" lineNum="18" parent="globals/SetLogger" pc="268436183" symbol="syncPending"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="22" lineNum="19" parent="globals/SetLogger" pc="268436187" symbol="syncPending"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="22" lineNum="20" parent="globals/SetLogger" pc="268436206" symbol="syncPending"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="22" lineNum="21" parent="globals/SetLogger" pc="268436226" symbol="syncPending"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="49" parent="globals/RoutineListView" pc="268436272" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="50" parent="globals/RoutineListView" pc="268436276" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="51" parent="globals/RoutineListView" pc="268436294" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="52" parent="globals/RoutineListView" pc="268436304" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="53" parent="globals/RoutineListView" pc="268436311" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="56" parent="globals/RoutineListView" pc="268436327" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="57" parent="globals/RoutineListView" pc="268436343" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="23" lineNum="59" parent="globals/RoutineListView" pc="268436367" symbol="onRoutinesFetched"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="24" lineNum="24" parent="globals/RoutineListView" pc="268436384" symbol="onLayout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="11" parent="globals/RoutineListView" pc="268436387" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="12" parent="globals/RoutineListView" pc="268436391" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="13" parent="globals/RoutineListView" pc="268436409" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="14" parent="globals/RoutineListView" pc="268436423" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="15" parent="globals/RoutineListView" pc="268436436" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="16" parent="globals/RoutineListView" pc="268436458" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="17" parent="globals/RoutineListView" pc="268436465" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="18" parent="globals/RoutineListView" pc="268436497" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="25" lineNum="20" parent="globals/RoutineListView" pc="268436534" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="26" lineNum="27" parent="globals/RoutineListView" pc="268436548" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="26" lineNum="28" parent="globals/RoutineListView" pc="268436550" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="26" lineNum="29" parent="globals/RoutineListView" pc="268436572" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="26" lineNum="30" parent="globals/RoutineListView" pc="268436584" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="26" lineNum="31" parent="globals/RoutineListView" pc="268436610" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="26" lineNum="39" parent="globals/RoutineListView" pc="268436677" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="27" lineNum="5" parent="globals/StorageManager" pc="268436757" symbol="getApiKey"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="27" lineNum="6" parent="globals/StorageManager" pc="268436759" symbol="getApiKey"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="28" lineNum="13" parent="globals/StorageManager" pc="268436780" symbol="getPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="28" lineNum="14" parent="globals/StorageManager" pc="268436784" symbol="getPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="28" lineNum="15" parent="globals/StorageManager" pc="268436806" symbol="getPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="28" lineNum="16" parent="globals/StorageManager" pc="268436812" symbol="getPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="28" lineNum="18" parent="globals/StorageManager" pc="268436822" symbol="getPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="29" lineNum="27" parent="globals/StorageManager" pc="268436825" symbol="clearPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="29" lineNum="28" parent="globals/StorageManager" pc="268436827" symbol="clearPendingWorkouts"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="30" lineNum="9" parent="globals/StorageManager" pc="268436850" symbol="setApiKey"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="30" lineNum="10" parent="globals/StorageManager" pc="268436852" symbol="setApiKey"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="32" lineNum="21" parent="globals/StorageManager" pc="268436876" symbol="savePendingWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="32" lineNum="22" parent="globals/StorageManager" pc="268436880" symbol="savePendingWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="32" lineNum="23" parent="globals/StorageManager" pc="268436893" symbol="savePendingWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="32" lineNum="24" parent="globals/StorageManager" pc="268436907" symbol="savePendingWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="33" lineNum="23" parent="globals/NetworkManager" pc="268436931" symbol="postWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="33" lineNum="24" parent="globals/NetworkManager" pc="268436935" symbol="postWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="33" lineNum="25" parent="globals/NetworkManager" pc="268436942" symbol="postWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="33" lineNum="33" parent="globals/NetworkManager" pc="268437019" symbol="postWorkout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="34" lineNum="11" parent="globals/NetworkManager" pc="268437044" symbol="fetchRoutines"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="34" lineNum="12" parent="globals/NetworkManager" pc="268437048" symbol="fetchRoutines"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="34" lineNum="13" parent="globals/NetworkManager" pc="268437055" symbol="fetchRoutines"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="34" lineNum="20" parent="globals/NetworkManager" pc="268437119" symbol="fetchRoutines"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="35" lineNum="7" parent="globals/NetworkManager" pc="268437143" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="35" lineNum="8" parent="globals/NetworkManager" pc="268437145" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="36" lineNum="10" parent="globals/SettingsView" pc="268437156" symbol="onLayout"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="37" lineNum="6" parent="globals/SettingsView" pc="268437159" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="37" lineNum="7" parent="globals/SettingsView" pc="268437161" symbol="initialize"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="38" lineNum="13" parent="globals/SettingsView" pc="268437180" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="38" lineNum="14" parent="globals/SettingsView" pc="268437182" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="38" lineNum="15" parent="globals/SettingsView" pc="268437204" symbol="onUpdate"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="38" lineNum="16" parent="globals/SettingsView" pc="268437216" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="1" lineNum="124" parent="globals/RoutineListDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="2" lineNum="35" parent="globals/RoutineDetailDelegate" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/bin/gen/006-B3225-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435498" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="4" lineNum="4" parent="globals/SettingsView" pc="268435522" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="5" lineNum="5" parent="globals/FolderListView" pc="268435541" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="6" lineNum="89" parent="globals/FolderListDelegate" pc="268435560" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="7" lineNum="4" parent="globals/RoutineDetailView" pc="268435579" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="8" lineNum="5" parent="globals/HevyApp" pc="268435598" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="9" lineNum="5" parent="globals/RoutineListView" pc="268435617" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="10" lineNum="154" parent="globals/RoutineListDelegate" pc="268435636" symbol="onBack"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="10" lineNum="155" parent="globals/RoutineListDelegate" pc="268435638" symbol="onBack"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="10" lineNum="156" parent="globals/RoutineListDelegate" pc="268435659" symbol="onBack"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="11" lineNum="132" parent="globals/RoutineListDelegate" pc="268435662" symbol="onPreviousPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="11" lineNum="133" parent="globals/RoutineListDelegate" pc="268435664" symbol="onPreviousPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="11" lineNum="134" parent="globals/RoutineListDelegate" pc="268435682" symbol="onPreviousPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="12" lineNum="127" parent="globals/RoutineListDelegate" pc="268435685" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="12" lineNum="128" parent="globals/RoutineListDelegate" pc="268435687" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="12" lineNum="129" parent="globals/RoutineListDelegate" pc="268435705" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="13" lineNum="137" parent="globals/RoutineListDelegate" pc="268435716" symbol="onNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="13" lineNum="138" parent="globals/RoutineListDelegate" pc="268435718" symbol="onNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="13" lineNum="139" parent="globals/RoutineListDelegate" pc="268435736" symbol="onNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="14" lineNum="142" parent="globals/RoutineListDelegate" pc="268435739" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="14" lineNum="143" parent="globals/RoutineListDelegate" pc="268435743" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="14" lineNum="144" parent="globals/RoutineListDelegate" pc="268435762" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="14" lineNum="145" parent="globals/RoutineListDelegate" pc="268435769" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="14" lineNum="151" parent="globals/RoutineListDelegate" pc="268435839" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="15" lineNum="40" parent="globals/RoutineDetailDelegate" pc="268435842" symbol="onBack"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="15" lineNum="41" parent="globals/RoutineDetailDelegate" pc="268435844" symbol="onBack"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="15" lineNum="42" parent="globals/RoutineDetailDelegate" pc="268435865" symbol="onBack"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="16" lineNum="36" parent="globals/RoutineDetailDelegate" pc="268435868" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="16" lineNum="37" parent="globals/RoutineDetailDelegate" pc="268435870" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="17" lineNum="25" parent="globals/SetLogger" pc="268435889" symbol="onPostResponse"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="17" lineNum="26" parent="globals/SetLogger" pc="268435891" symbol="onPostResponse"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="17" lineNum="27" parent="globals/SetLogger" pc="268435902" symbol="onPostResponse"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="17" lineNum="29" parent="globals/SetLogger" pc="268435923" symbol="onPostResponse"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="18" lineNum="10" parent="globals/SetLogger" pc="268435948" symbol="logSet"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="18" lineNum="11" parent="globals/SetLogger" pc="268435952" symbol="logSet"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="18" lineNum="15" parent="globals/SetLogger" pc="268435994" symbol="logSet"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="19" lineNum="6" parent="globals/SetLogger" pc="268436015" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="19" lineNum="7" parent="globals/SetLogger" pc="268436017" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="18" parent="globals/SetLogger" pc="268436028" symbol="syncPending"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="19" parent="globals/SetLogger" pc="268436032" symbol="syncPending"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="20" parent="globals/SetLogger" pc="268436051" symbol="syncPending"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SetLogger.mc" id="20" lineNum="21" parent="globals/SetLogger" pc="268436071" symbol="syncPending"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="21" lineNum="5" parent="globals/StorageManager" pc="268436117" symbol="getApiKey"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="21" lineNum="6" parent="globals/StorageManager" pc="268436119" symbol="getApiKey"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="22" lineNum="13" parent="globals/StorageManager" pc="268436140" symbol="getPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="22" lineNum="14" parent="globals/StorageManager" pc="268436144" symbol="getPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="22" lineNum="15" parent="globals/StorageManager" pc="268436166" symbol="getPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="22" lineNum="16" parent="globals/StorageManager" pc="268436172" symbol="getPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="22" lineNum="18" parent="globals/StorageManager" pc="268436182" symbol="getPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="23" lineNum="27" parent="globals/StorageManager" pc="268436185" symbol="clearPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="23" lineNum="28" parent="globals/StorageManager" pc="268436187" symbol="clearPendingWorkouts"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="24" lineNum="9" parent="globals/StorageManager" pc="268436210" symbol="setApiKey"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="24" lineNum="10" parent="globals/StorageManager" pc="268436212" symbol="setApiKey"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="26" lineNum="21" parent="globals/StorageManager" pc="268436236" symbol="savePendingWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="26" lineNum="22" parent="globals/StorageManager" pc="268436240" symbol="savePendingWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="26" lineNum="23" parent="globals/StorageManager" pc="268436253" symbol="savePendingWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/StorageManager.mc" id="26" lineNum="24" parent="globals/StorageManager" pc="268436267" symbol="savePendingWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="27" lineNum="10" parent="globals/SettingsView" pc="268436291" symbol="onLayout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="28" lineNum="6" parent="globals/SettingsView" pc="268436294" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="28" lineNum="7" parent="globals/SettingsView" pc="268436296" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="29" lineNum="13" parent="globals/SettingsView" pc="268436315" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="29" lineNum="14" parent="globals/SettingsView" pc="268436317" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="29" lineNum="15" parent="globals/SettingsView" pc="268436339" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="29" lineNum="16" parent="globals/SettingsView" pc="268436351" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="30" lineNum="81" parent="globals/FolderListView" pc="268436413" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="30" lineNum="82" parent="globals/FolderListView" pc="268436415" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="30" lineNum="83" parent="globals/FolderListView" pc="268436441" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="30" lineNum="84" parent="globals/FolderListView" pc="268436481" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="31" lineNum="20" parent="globals/FolderListView" pc="268436501" symbol="onLayout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="32" lineNum="67" parent="globals/FolderListView" pc="268436504" symbol="getSelectedFolder"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="32" lineNum="68" parent="globals/FolderListView" pc="268436506" symbol="getSelectedFolder"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="32" lineNum="69" parent="globals/FolderListView" pc="268436532" symbol="getSelectedFolder"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="32" lineNum="71" parent="globals/FolderListView" pc="268436553" symbol="getSelectedFolder"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="11" parent="globals/FolderListView" pc="268436555" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="12" parent="globals/FolderListView" pc="268436557" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="13" parent="globals/FolderListView" pc="268436575" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="14" parent="globals/FolderListView" pc="268436585" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="15" parent="globals/FolderListView" pc="268436599" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="16" parent="globals/FolderListView" pc="268436612" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="33" lineNum="17" parent="globals/FolderListView" pc="268436625" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="23" parent="globals/FolderListView" pc="268436660" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="24" parent="globals/FolderListView" pc="268436664" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="25" parent="globals/FolderListView" pc="268436686" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="26" parent="globals/FolderListView" pc="268436698" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="27" parent="globals/FolderListView" pc="268436711" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="29" parent="globals/FolderListView" pc="268436724" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="30" parent="globals/FolderListView" pc="268436750" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="32" parent="globals/FolderListView" pc="268436796" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="35" parent="globals/FolderListView" pc="268436800" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="36" parent="globals/FolderListView" pc="268436819" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="37" parent="globals/FolderListView" pc="268436829" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="37" parent="globals/FolderListView" pc="268436835" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="39" parent="globals/FolderListView" pc="268436845" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="40" parent="globals/FolderListView" pc="268436867" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="44" parent="globals/FolderListView" pc="268436943" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="45" parent="globals/FolderListView" pc="268436965" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="48" parent="globals/FolderListView" pc="268437005" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="34" lineNum="49" parent="globals/FolderListView" pc="268437027" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="53" parent="globals/FolderListView" pc="268437077" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="54" parent="globals/FolderListView" pc="268437081" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="55" parent="globals/FolderListView" pc="268437099" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="56" parent="globals/FolderListView" pc="268437109" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="57" parent="globals/FolderListView" pc="268437116" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="58" parent="globals/FolderListView" pc="268437126" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="61" parent="globals/FolderListView" pc="268437145" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="62" parent="globals/FolderListView" pc="268437161" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="35" lineNum="64" parent="globals/FolderListView" pc="268437185" symbol="onFoldersFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="36" lineNum="74" parent="globals/FolderListView" pc="268437202" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="36" lineNum="75" parent="globals/FolderListView" pc="268437204" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="36" lineNum="76" parent="globals/FolderListView" pc="268437230" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="36" lineNum="77" parent="globals/FolderListView" pc="268437288" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="37" lineNum="99" parent="globals/FolderListDelegate" pc="268437308" symbol="onPreviousPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="37" lineNum="100" parent="globals/FolderListDelegate" pc="268437310" symbol="onPreviousPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="37" lineNum="101" parent="globals/FolderListDelegate" pc="268437328" symbol="onPreviousPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="38" lineNum="93" parent="globals/FolderListDelegate" pc="268437331" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="38" lineNum="94" parent="globals/FolderListDelegate" pc="268437333" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="38" lineNum="95" parent="globals/FolderListDelegate" pc="268437351" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="38" lineNum="96" parent="globals/FolderListDelegate" pc="268437361" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="39" lineNum="104" parent="globals/FolderListDelegate" pc="268437372" symbol="onNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="39" lineNum="105" parent="globals/FolderListDelegate" pc="268437374" symbol="onNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="39" lineNum="106" parent="globals/FolderListDelegate" pc="268437392" symbol="onNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="109" parent="globals/FolderListDelegate" pc="268437395" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="110" parent="globals/FolderListDelegate" pc="268437399" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="111" parent="globals/FolderListDelegate" pc="268437418" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="112" parent="globals/FolderListDelegate" pc="268437425" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="113" parent="globals/FolderListDelegate" pc="268437435" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="114" parent="globals/FolderListDelegate" pc="268437445" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="115" parent="globals/FolderListDelegate" pc="268437481" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="40" lineNum="121" parent="globals/FolderListDelegate" pc="268437531" symbol="onSelect"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="41" lineNum="12" parent="globals/RoutineDetailView" pc="268437534" symbol="onLayout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="42" lineNum="7" parent="globals/RoutineDetailView" pc="268437537" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="42" lineNum="8" parent="globals/RoutineDetailView" pc="268437539" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="42" lineNum="9" parent="globals/RoutineDetailView" pc="268437557" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="15" parent="globals/RoutineDetailView" pc="268437568" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="16" parent="globals/RoutineDetailView" pc="268437572" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="17" parent="globals/RoutineDetailView" pc="268437594" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="18" parent="globals/RoutineDetailView" pc="268437606" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="19" parent="globals/RoutineDetailView" pc="268437613" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="20" parent="globals/RoutineDetailView" pc="268437626" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="21" parent="globals/RoutineDetailView" pc="268437642" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="22" parent="globals/RoutineDetailView" pc="268437649" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="43" lineNum="25" parent="globals/RoutineDetailView" pc="268437659" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="44" lineNum="11" parent="globals/HevyApp" pc="268437718" symbol="onStart"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="44" lineNum="13" parent="globals/HevyApp" pc="268437720" symbol="onStart"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="45" lineNum="19" parent="globals/HevyApp" pc="268437747" symbol="getInitialView"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="45" lineNum="20" parent="globals/HevyApp" pc="268437751" symbol="getInitialView"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="45" lineNum="21" parent="globals/HevyApp" pc="268437795" symbol="getInitialView"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="45" lineNum="22" parent="globals/HevyApp" pc="268437821" symbol="getInitialView"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="46" lineNum="7" parent="globals/HevyApp" pc="268437872" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="46" lineNum="8" parent="globals/HevyApp" pc="268437874" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/App.mc" id="47" lineNum="16" parent="globals/HevyApp" pc="268437897" symbol="onStop"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="48" lineNum="28" parent="globals/RoutineListView" pc="268437900" symbol="fetchNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="48" lineNum="29" parent="globals/RoutineListView" pc="268437902" symbol="fetchNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="48" lineNum="30" parent="globals/RoutineListView" pc="268437921" symbol="fetchNextPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="74" parent="globals/RoutineListView" pc="268437964" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="75" parent="globals/RoutineListView" pc="268437968" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="76" parent="globals/RoutineListView" pc="268437986" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="77" parent="globals/RoutineListView" pc="268438002" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="78" parent="globals/RoutineListView" pc="268438012" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="79" parent="globals/RoutineListView" pc="268438019" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="80" parent="globals/RoutineListView" pc="268438043" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="81" parent="globals/RoutineListView" pc="268438050" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="82" parent="globals/RoutineListView" pc="268438070" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="87" parent="globals/RoutineListView" pc="268438109" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="88" parent="globals/RoutineListView" pc="268438129" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="89" parent="globals/RoutineListView" pc="268438141" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="92" parent="globals/RoutineListView" pc="268438148" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="93" parent="globals/RoutineListView" pc="268438164" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="96" parent="globals/RoutineListView" pc="268438188" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="97" parent="globals/RoutineListView" pc="268438214" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="49" lineNum="99" parent="globals/RoutineListView" pc="268438230" symbol="onRoutinesFetched"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="50" lineNum="116" parent="globals/RoutineListView" pc="268438247" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="50" lineNum="117" parent="globals/RoutineListView" pc="268438249" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="50" lineNum="118" parent="globals/RoutineListView" pc="268438275" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="50" lineNum="119" parent="globals/RoutineListView" pc="268438315" symbol="scrollDown"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="51" lineNum="33" parent="globals/RoutineListView" pc="268438335" symbol="onLayout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="52" lineNum="109" parent="globals/RoutineListView" pc="268438338" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="52" lineNum="110" parent="globals/RoutineListView" pc="268438340" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="52" lineNum="111" parent="globals/RoutineListView" pc="268438366" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="52" lineNum="112" parent="globals/RoutineListView" pc="268438424" symbol="scrollUp"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="15" parent="globals/RoutineListView" pc="268438444" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="16" parent="globals/RoutineListView" pc="268438446" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="17" parent="globals/RoutineListView" pc="268438464" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="18" parent="globals/RoutineListView" pc="268438474" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="19" parent="globals/RoutineListView" pc="268438484" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="20" parent="globals/RoutineListView" pc="268438494" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="21" parent="globals/RoutineListView" pc="268438508" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="22" parent="globals/RoutineListView" pc="268438521" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="23" parent="globals/RoutineListView" pc="268438534" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="24" parent="globals/RoutineListView" pc="268438547" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="53" lineNum="25" parent="globals/RoutineListView" pc="268438560" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="36" parent="globals/RoutineListView" pc="268438573" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="37" parent="globals/RoutineListView" pc="268438577" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="38" parent="globals/RoutineListView" pc="268438599" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="39" parent="globals/RoutineListView" pc="268438611" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="40" parent="globals/RoutineListView" pc="268438624" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="43" parent="globals/RoutineListView" pc="268438637" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="44" parent="globals/RoutineListView" pc="268438650" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="45" parent="globals/RoutineListView" pc="268438672" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="49" parent="globals/RoutineListView" pc="268438721" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="50" parent="globals/RoutineListView" pc="268438747" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="51" parent="globals/RoutineListView" pc="268438769" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="53" parent="globals/RoutineListView" pc="268438815" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="56" parent="globals/RoutineListView" pc="268438819" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="57" parent="globals/RoutineListView" pc="268438838" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="58" parent="globals/RoutineListView" pc="268438848" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="58" parent="globals/RoutineListView" pc="268438854" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="60" parent="globals/RoutineListView" pc="268438864" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="61" parent="globals/RoutineListView" pc="268438886" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="65" parent="globals/RoutineListView" pc="268438968" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="66" parent="globals/RoutineListView" pc="268438990" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="69" parent="globals/RoutineListView" pc="268439030" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="54" lineNum="70" parent="globals/RoutineListView" pc="268439052" symbol="onUpdate"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="55" lineNum="102" parent="globals/RoutineListView" pc="268439102" symbol="getSelectedRoutine"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="55" lineNum="103" parent="globals/RoutineListView" pc="268439104" symbol="getSelectedRoutine"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="55" lineNum="104" parent="globals/RoutineListView" pc="268439130" symbol="getSelectedRoutine"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="55" lineNum="106" parent="globals/RoutineListView" pc="268439151" symbol="getSelectedRoutine"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="56" lineNum="35" parent="globals/NetworkManager" pc="268439153" symbol="postWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="56" lineNum="36" parent="globals/NetworkManager" pc="268439157" symbol="postWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="56" lineNum="37" parent="globals/NetworkManager" pc="268439164" symbol="postWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="56" lineNum="45" parent="globals/NetworkManager" pc="268439241" symbol="postWorkout"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="57" lineNum="11" parent="globals/NetworkManager" pc="268439266" symbol="fetchFolders"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="57" lineNum="12" parent="globals/NetworkManager" pc="268439270" symbol="fetchFolders"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="57" lineNum="13" parent="globals/NetworkManager" pc="268439277" symbol="fetchFolders"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="57" lineNum="18" parent="globals/NetworkManager" pc="268439341" symbol="fetchFolders"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="58" lineNum="7" parent="globals/NetworkManager" pc="268439365" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="58" lineNum="8" parent="globals/NetworkManager" pc="268439367" symbol="initialize"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="59" lineNum="21" parent="globals/NetworkManager" pc="268439378" symbol="fetchRoutinesPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="59" lineNum="22" parent="globals/NetworkManager" pc="268439382" symbol="fetchRoutinesPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="59" lineNum="23" parent="globals/NetworkManager" pc="268439389" symbol="fetchRoutinesPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="59" lineNum="27" parent="globals/NetworkManager" pc="268439420" symbol="fetchRoutinesPage"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/NetworkManager.mc" id="59" lineNum="32" parent="globals/NetworkManager" pc="268439484" symbol="fetchRoutinesPage"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="23" symbol="_statusText"/>
-        <entry id="16" object="true" symbol="StorageManager"/>
-        <entry field="true" id="22" symbol="_routines"/>
-        <entry field="true" id="17" symbol="_routine"/>
+        <entry id="47" method="true" symbol="fetchRoutinesPage"/>
+        <entry field="true" id="31" symbol="_statusText"/>
+        <entry id="18" object="true" symbol="StorageManager"/>
+        <entry id="43" method="true" symbol="getSelectedRoutine"/>
+        <entry field="true" id="41" symbol="_routines"/>
+        <entry field="true" id="36" symbol="_routine"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="19" method="true" symbol="logSet"/>
+        <entry id="21" method="true" symbol="logSet"/>
         <entry id="6" module="true" symbol="globals/StorageManager/&lt;statics&gt;"/>
-        <entry id="25" method="true" symbol="clearPendingWorkouts"/>
+        <entry id="24" method="true" symbol="clearPendingWorkouts"/>
+        <entry id="32" method="true" symbol="getSelectedFolder"/>
         <entry id="8390424" module="true" symbol="Storage"/>
-        <entry id="28" method="true" symbol="savePendingWorkout"/>
-        <entry field="true" id="33" symbol="API_BASE_URL"/>
-        <entry id="32" method="true" symbol="postWorkout"/>
-        <entry id="13" object="true" symbol="RoutineListView"/>
+        <entry id="27" method="true" symbol="savePendingWorkout"/>
+        <entry field="true" id="49" symbol="API_BASE_URL"/>
+        <entry id="48" method="true" symbol="postWorkout"/>
+        <entry id="15" object="true" symbol="RoutineListView"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="18" symbol="_networkManager"/>
-        <entry id="31" method="true" symbol="fetchRoutines"/>
-        <entry field="true" id="37" symbol="AppName"/>
-        <entry id="29" method="true" symbol="setApiKey"/>
+        <entry field="true" id="20" symbol="_networkManager"/>
+        <entry id="42" method="true" symbol="fetchNextPage"/>
+        <entry field="true" id="53" symbol="AppName"/>
+        <entry id="28" method="true" symbol="setApiKey"/>
         <entry id="5" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389594" symbol="headers"/>
-        <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="33" method="true" symbol="onFoldersFetched"/>
         <entry id="3" module="true" symbol="globals/Rez"/>
-        <entry id="24" method="true" symbol="onRoutinesFetched"/>
-        <entry id="21" method="true" symbol="syncPending"/>
+        <entry id="44" method="true" symbol="onRoutinesFetched"/>
+        <entry id="23" method="true" symbol="syncPending"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="40" symbol="_pageCount"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry id="26" method="true" symbol="getApiKey"/>
-        <entry id="14" object="true" symbol="SetLogger"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="25" method="true" symbol="getApiKey"/>
+        <entry id="16" object="true" symbol="SetLogger"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="8" object="true" symbol="HevyApp"/>
+        <entry id="10" object="true" symbol="HevyApp"/>
         <entry id="7" object="true" symbol="AppConstants"/>
         <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="34" method="true" symbol="scrollDown"/>
+        <entry id="46" method="true" symbol="fetchFolders"/>
+        <entry field="true" id="39" symbol="_folderTitle"/>
         <entry id="8389844" symbol="responseType"/>
+        <entry id="9" object="true" symbol="FolderListView"/>
         <entry id="8388786" method="true" symbol="method"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry field="true" id="35" symbol="WORKOUTS_ENDPOINT"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry field="true" id="51" symbol="WORKOUTS_ENDPOINT"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="38" symbol="_folderId"/>
+        <entry field="true" id="30" symbol="_selectedIndex"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="34" symbol="ROUTINES_ENDPOINT"/>
-        <entry field="true" id="36" symbol="LauncherIcon"/>
+        <entry field="true" id="50" symbol="ROUTINES_ENDPOINT"/>
+        <entry field="true" id="52" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="11" object="true" symbol="RoutineDetailView"/>
-        <entry id="20" method="true" symbol="onPostResponse"/>
+        <entry id="13" object="true" symbol="RoutineDetailView"/>
+        <entry id="22" method="true" symbol="onPostResponse"/>
         <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="37" symbol="_currentPage"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="19" symbol="_view"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="10" object="true" symbol="RoutineDetailDelegate"/>
-        <entry id="27" method="true" symbol="getPendingWorkouts"/>
+        <entry id="12" object="true" symbol="RoutineDetailDelegate"/>
+        <entry id="26" method="true" symbol="getPendingWorkouts"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry field="true" id="30" symbol="_apiKey"/>
+        <entry field="true" id="45" symbol="_apiKey"/>
+        <entry id="8" object="true" symbol="FolderListDelegate"/>
         <entry id="2" module="true" symbol="globals/AppConstants/&lt;statics&gt;"/>
-        <entry id="9" object="true" symbol="NetworkManager"/>
-        <entry id="15" object="true" symbol="SettingsView"/>
-        <entry id="12" object="true" symbol="RoutineListDelegate"/>
+        <entry id="11" object="true" symbol="NetworkManager"/>
+        <entry id="17" object="true" symbol="SettingsView"/>
+        <entry field="true" id="29" symbol="_folders"/>
+        <entry id="14" object="true" symbol="RoutineListDelegate"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
         <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="35" method="true" symbol="scrollUp"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435631" name="routine" stackId="1" startPc="268435601"/>
-        <entry arg="true" endPc="268435781" name="dc" stackId="1" startPc="268435632"/>
-        <entry endPc="268435780" name="name" stackId="2" startPc="268435636"/>
-        <entry endPc="268435719" name="title" stackId="3" startPc="268435690"/>
-        <entry endPc="268435942" name="apiKey" stackId="1" startPc="268435789"/>
-        <entry arg="true" endPc="268436102" name="responseCode" stackId="1" startPc="268436044"/>
-        <entry arg="true" endPc="268436102" name="data" stackId="2" startPc="268436044"/>
-        <entry arg="true" endPc="268436169" name="exerciseId" stackId="1" startPc="268436103"/>
-        <entry arg="true" endPc="268436169" name="setData" stackId="2" startPc="268436103"/>
-        <entry endPc="268436168" name="workoutData" stackId="3" startPc="268436107"/>
-        <entry arg="true" endPc="268436182" name="networkManager" stackId="1" startPc="268436170"/>
-        <entry endPc="268436270" name="pending" stackId="1" startPc="268436187"/>
-        <entry arg="true" endPc="268436383" name="responseCode" stackId="1" startPc="268436272"/>
-        <entry arg="true" endPc="268436383" name="data" stackId="2" startPc="268436272"/>
-        <entry endPc="268436323" name="routines" stackId="3" startPc="268436294"/>
-        <entry endPc="268436546" name="apiKey" stackId="1" startPc="268436391"/>
-        <entry arg="true" endPc="268436756" name="dc" stackId="1" startPc="268436548"/>
-        <entry endPc="268436824" name="data" stackId="1" startPc="268436784"/>
-        <entry arg="true" endPc="268436875" name="apiKey" stackId="1" startPc="268436850"/>
-        <entry arg="true" endPc="268436930" name="workoutData" stackId="1" startPc="268436876"/>
-        <entry endPc="268436929" name="pending" stackId="2" startPc="268436880"/>
-        <entry arg="true" endPc="268437043" name="workoutData" stackId="1" startPc="268436931"/>
-        <entry arg="true" endPc="268437043" name="callback" stackId="2" startPc="268436931"/>
-        <entry endPc="268437042" name="url" stackId="3" startPc="268436935"/>
-        <entry endPc="268437042" name="options" stackId="4" startPc="268436935"/>
-        <entry arg="true" endPc="268437142" name="callback" stackId="1" startPc="268437044"/>
-        <entry endPc="268437141" name="url" stackId="2" startPc="268437048"/>
-        <entry endPc="268437141" name="options" stackId="3" startPc="268437048"/>
-        <entry arg="true" endPc="268437155" name="apiKey" stackId="1" startPc="268437143"/>
-        <entry arg="true" endPc="268437277" name="dc" stackId="1" startPc="268437180"/>
+        <entry arg="true" endPc="268435715" name="view" stackId="1" startPc="268435685"/>
+        <entry endPc="268435841" name="routine" stackId="1" startPc="268435743"/>
+        <entry arg="true" endPc="268435947" name="responseCode" stackId="1" startPc="268435889"/>
+        <entry arg="true" endPc="268435947" name="data" stackId="2" startPc="268435889"/>
+        <entry arg="true" endPc="268436014" name="exerciseId" stackId="1" startPc="268435948"/>
+        <entry arg="true" endPc="268436014" name="setData" stackId="2" startPc="268435948"/>
+        <entry endPc="268436013" name="workoutData" stackId="3" startPc="268435952"/>
+        <entry arg="true" endPc="268436027" name="networkManager" stackId="1" startPc="268436015"/>
+        <entry endPc="268436115" name="pending" stackId="1" startPc="268436032"/>
+        <entry endPc="268436184" name="data" stackId="1" startPc="268436144"/>
+        <entry arg="true" endPc="268436235" name="apiKey" stackId="1" startPc="268436210"/>
+        <entry arg="true" endPc="268436290" name="workoutData" stackId="1" startPc="268436236"/>
+        <entry endPc="268436289" name="pending" stackId="2" startPc="268436240"/>
+        <entry arg="true" endPc="268436412" name="dc" stackId="1" startPc="268436315"/>
+        <entry arg="true" endPc="268436659" name="networkManager" stackId="1" startPc="268436555"/>
+        <entry arg="true" endPc="268437076" name="dc" stackId="1" startPc="268436660"/>
+        <entry endPc="268437075" name="w" stackId="2" startPc="268436664"/>
+        <entry endPc="268437075" name="h" stackId="3" startPc="268436664"/>
+        <entry endPc="268437075" name="folder" stackId="4" startPc="268436664"/>
+        <entry endPc="268437075" name="title" stackId="5" startPc="268436664"/>
+        <entry arg="true" endPc="268437201" name="responseCode" stackId="1" startPc="268437077"/>
+        <entry arg="true" endPc="268437201" name="data" stackId="2" startPc="268437077"/>
+        <entry endPc="268437141" name="folders" stackId="3" startPc="268437099"/>
+        <entry arg="true" endPc="268437371" name="view" stackId="1" startPc="268437331"/>
+        <entry arg="true" endPc="268437371" name="networkManager" stackId="2" startPc="268437331"/>
+        <entry endPc="268437533" name="folder" stackId="1" startPc="268437399"/>
+        <entry endPc="268437527" name="folderId" stackId="2" startPc="268437425"/>
+        <entry endPc="268437527" name="folderTitle" stackId="3" startPc="268437425"/>
+        <entry endPc="268437527" name="routineView" stackId="4" startPc="268437425"/>
+        <entry arg="true" endPc="268437567" name="routine" stackId="1" startPc="268437537"/>
+        <entry arg="true" endPc="268437717" name="dc" stackId="1" startPc="268437568"/>
+        <entry endPc="268437716" name="name" stackId="2" startPc="268437572"/>
+        <entry endPc="268437655" name="title" stackId="3" startPc="268437626"/>
+        <entry arg="true" endPc="268437746" name="state" stackId="1" startPc="268437718"/>
+        <entry endPc="268437871" name="networkManager" stackId="1" startPc="268437751"/>
+        <entry endPc="268437871" name="view" stackId="2" startPc="268437751"/>
+        <entry arg="true" endPc="268438246" name="responseCode" stackId="1" startPc="268437964"/>
+        <entry arg="true" endPc="268438246" name="data" stackId="2" startPc="268437964"/>
+        <entry endPc="268438144" name="routines" stackId="3" startPc="268437986"/>
+        <entry endPc="268438105" name="i" stackId="4" startPc="268438043"/>
+        <entry endPc="268438092" name="routine" stackId="5" startPc="268438043"/>
+        <entry arg="true" endPc="268438572" name="networkManager" stackId="1" startPc="268438444"/>
+        <entry arg="true" endPc="268438572" name="folderId" stackId="2" startPc="268438444"/>
+        <entry arg="true" endPc="268438572" name="folderTitle" stackId="3" startPc="268438444"/>
+        <entry arg="true" endPc="268439101" name="dc" stackId="1" startPc="268438573"/>
+        <entry endPc="268439100" name="w" stackId="2" startPc="268438577"/>
+        <entry endPc="268439100" name="h" stackId="3" startPc="268438577"/>
+        <entry endPc="268439100" name="routine" stackId="4" startPc="268438577"/>
+        <entry endPc="268439100" name="title" stackId="5" startPc="268438577"/>
+        <entry arg="true" endPc="268439265" name="workoutData" stackId="1" startPc="268439153"/>
+        <entry arg="true" endPc="268439265" name="callback" stackId="2" startPc="268439153"/>
+        <entry endPc="268439264" name="url" stackId="3" startPc="268439157"/>
+        <entry endPc="268439264" name="options" stackId="4" startPc="268439157"/>
+        <entry arg="true" endPc="268439364" name="callback" stackId="1" startPc="268439266"/>
+        <entry endPc="268439363" name="url" stackId="2" startPc="268439270"/>
+        <entry endPc="268439363" name="options" stackId="3" startPc="268439270"/>
+        <entry arg="true" endPc="268439377" name="apiKey" stackId="1" startPc="268439365"/>
+        <entry arg="true" endPc="268439508" name="page" stackId="1" startPc="268439378"/>
+        <entry arg="true" endPc="268439508" name="callback" stackId="2" startPc="268439378"/>
+        <entry endPc="268439507" name="url" stackId="3" startPc="268439382"/>
+        <entry endPc="268439507" name="params" stackId="4" startPc="268439382"/>
+        <entry endPc="268439507" name="options" stackId="5" startPc="268439382"/>
     </localVars>
     <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3225-00"/>
     <annotations>
@@ -211,42 +388,35 @@
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/RoutineDetailView" offset="198" parentId="globals" symbolId="RoutineDetailView" type="class"/>
-        <dataEntry label="globals/HevyApp" offset="269" parentId="globals" symbolId="HevyApp" type="class"/>
-        <dataEntry label="globals/RoutineListDelegate" offset="340" parentId="globals" symbolId="RoutineListDelegate" type="class"/>
-        <dataEntry label="globals/RoutineDetailDelegate" offset="395" parentId="globals" symbolId="RoutineDetailDelegate" type="class"/>
-        <dataEntry label="globals/SetLogger" offset="450" parentId="globals" symbolId="SetLogger" type="class"/>
-        <dataEntry label="globals/Rez" offset="529" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/RoutineListView" offset="576" parentId="globals" symbolId="RoutineListView" type="class"/>
-        <dataEntry label="globals/StorageManager" offset="671" parentId="globals" symbolId="StorageManager" type="class"/>
-        <dataEntry label="globals/StorageManager/&lt;statics&gt;" offset="718" parentId="StorageManager" symbolId="&lt;statics&gt;" type="module"/>
-        <dataEntry label="globals/NetworkManager" offset="789" parentId="globals" symbolId="NetworkManager" type="class"/>
-        <dataEntry label="globals/SettingsView" offset="860" parentId="globals" symbolId="SettingsView" type="class"/>
-        <dataEntry label="globals/AppConstants" offset="923" parentId="globals" symbolId="AppConstants" type="class"/>
-        <dataEntry label="globals/AppConstants/&lt;statics&gt;" offset="970" parentId="AppConstants" symbolId="&lt;statics&gt;" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1025" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1064" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/RoutineListDelegate" offset="214" parentId="globals" symbolId="RoutineListDelegate" type="class"/>
+        <dataEntry label="globals/RoutineDetailDelegate" offset="301" parentId="globals" symbolId="RoutineDetailDelegate" type="class"/>
+        <dataEntry label="globals/SetLogger" offset="356" parentId="globals" symbolId="SetLogger" type="class"/>
+        <dataEntry label="globals/Rez" offset="435" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/StorageManager" offset="482" parentId="globals" symbolId="StorageManager" type="class"/>
+        <dataEntry label="globals/StorageManager/&lt;statics&gt;" offset="529" parentId="StorageManager" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/SettingsView" offset="600" parentId="globals" symbolId="SettingsView" type="class"/>
+        <dataEntry label="globals/FolderListView" offset="663" parentId="globals" symbolId="FolderListView" type="class"/>
+        <dataEntry label="globals/FolderListDelegate" offset="790" parentId="globals" symbolId="FolderListDelegate" type="class"/>
+        <dataEntry label="globals/RoutineDetailView" offset="877" parentId="globals" symbolId="RoutineDetailView" type="class"/>
+        <dataEntry label="globals/HevyApp" offset="948" parentId="globals" symbolId="HevyApp" type="class"/>
+        <dataEntry label="globals/RoutineListView" offset="1019" parentId="globals" symbolId="RoutineListView" type="class"/>
+        <dataEntry label="globals/NetworkManager" offset="1186" parentId="globals" symbolId="NetworkManager" type="class"/>
+        <dataEntry label="globals/AppConstants" offset="1265" parentId="globals" symbolId="AppConstants" type="class"/>
+        <dataEntry label="globals/AppConstants/&lt;statics&gt;" offset="1312" parentId="AppConstants" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1367" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1406" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="RoutineDetailView" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="RoutineListDelegate" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="HevyApp" startPc="268435479">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435516" name="&lt;init&gt;" parent="RoutineListDelegate" startPc="268435498">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435535" name="&lt;init&gt;" parent="RoutineDetailDelegate" startPc="268435517">
+        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="RoutineDetailDelegate" startPc="268435479">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="SetLogger">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435559" name="&lt;init&gt;" parent="Rez" startPc="268435536">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435578" name="&lt;init&gt;" parent="RoutineListView" startPc="268435560">
+        <functionEntry accessMode="public" endPc="268435521" name="&lt;init&gt;" parent="Rez" startPc="268435498">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="StorageManager">
@@ -255,10 +425,25 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/StorageManager">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="&lt;init&gt;" parent="NetworkManager">
+        <functionEntry accessMode="public" endPc="268435540" name="&lt;init&gt;" parent="SettingsView" startPc="268435522">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435597" name="&lt;init&gt;" parent="SettingsView" startPc="268435579">
+        <functionEntry accessMode="public" endPc="268435559" name="&lt;init&gt;" parent="FolderListView" startPc="268435541">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435578" name="&lt;init&gt;" parent="FolderListDelegate" startPc="268435560">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435597" name="&lt;init&gt;" parent="RoutineDetailView" startPc="268435579">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435616" name="&lt;init&gt;" parent="HevyApp" startPc="268435598">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435635" name="&lt;init&gt;" parent="RoutineListView" startPc="268435617">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="NetworkManager">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="AppConstants">
@@ -267,59 +452,43 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/AppConstants">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435600" name="onLayout" parent="RoutineDetailView" startPc="268435598">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268435661" name="onBack" parent="RoutineListDelegate" startPc="268435636">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435631" name="initialize" parent="RoutineDetailView" startPc="268435601">
-            <param id="routine"/>
+        <functionEntry accessMode="public" endPc="268435684" name="onPreviousPage" parent="RoutineListDelegate" startPc="268435662">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435781" name="onUpdate" parent="RoutineDetailView" startPc="268435632">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268435715" name="initialize" parent="RoutineListDelegate" startPc="268435685">
+            <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435784" name="onStart" parent="HevyApp" startPc="268435782">
-            <param id="state"/>
+        <functionEntry accessMode="public" endPc="268435738" name="onNextPage" parent="RoutineListDelegate" startPc="268435716">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435942" name="getInitialView" parent="HevyApp" startPc="268435785">
+        <functionEntry accessMode="public" endPc="268435841" name="onSelect" parent="RoutineListDelegate" startPc="268435739">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435967" name="initialize" parent="HevyApp" startPc="268435943">
+        <functionEntry accessMode="public" endPc="268435867" name="onBack" parent="RoutineDetailDelegate" startPc="268435842">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435970" name="onStop" parent="HevyApp" startPc="268435968">
-            <param id="state"/>
+        <functionEntry accessMode="public" endPc="268435888" name="initialize" parent="RoutineDetailDelegate" startPc="268435868">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435975" name="onMenu" parent="RoutineListDelegate" startPc="268435971">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435996" name="initialize" parent="RoutineListDelegate" startPc="268435976">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436022" name="onBack" parent="RoutineDetailDelegate" startPc="268435997">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436043" name="initialize" parent="RoutineDetailDelegate" startPc="268436023">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436102" name="onPostResponse" parent="SetLogger" startPc="268436044">
+        <functionEntry accessMode="public" endPc="268435947" name="onPostResponse" parent="SetLogger" startPc="268435889">
             <param id="responseCode"/>
             <param id="data"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436169" name="logSet" parent="SetLogger" startPc="268436103">
+        <functionEntry accessMode="public" endPc="268436014" name="logSet" parent="SetLogger" startPc="268435948">
             <param id="exerciseId"/>
             <param id="setData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436182" name="initialize" parent="SetLogger" startPc="268436170">
+        <functionEntry accessMode="public" endPc="268436027" name="initialize" parent="SetLogger" startPc="268436015">
             <param id="networkManager"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436271" name="syncPending" parent="SetLogger" startPc="268436183">
+        <functionEntry accessMode="public" endPc="268436116" name="syncPending" parent="SetLogger" startPc="268436028">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -328,64 +497,150 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436383" name="onRoutinesFetched" parent="RoutineListView" startPc="268436272">
-            <param id="responseCode"/>
-            <param id="data"/>
+        <functionEntry accessMode="public" endPc="268436139" name="getApiKey" parent="StorageManager" startPc="268436117">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436386" name="onLayout" parent="RoutineListView" startPc="268436384">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268436184" name="getPendingWorkouts" parent="StorageManager" startPc="268436140">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436547" name="initialize" parent="RoutineListView" startPc="268436387">
+        <functionEntry accessMode="public" endPc="268436209" name="clearPendingWorkouts" parent="StorageManager" startPc="268436185">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436756" name="onUpdate" parent="RoutineListView" startPc="268436548">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436779" name="getApiKey" parent="StorageManager" startPc="268436757">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436824" name="getPendingWorkouts" parent="StorageManager" startPc="268436780">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436849" name="clearPendingWorkouts" parent="StorageManager" startPc="268436825">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436875" name="setApiKey" parent="StorageManager" startPc="268436850">
+        <functionEntry accessMode="public" endPc="268436235" name="setApiKey" parent="StorageManager" startPc="268436210">
             <param id="apiKey"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="StorageManager">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436930" name="savePendingWorkout" parent="StorageManager" startPc="268436876">
+        <functionEntry accessMode="public" endPc="268436290" name="savePendingWorkout" parent="StorageManager" startPc="268436236">
             <param id="workoutData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437043" name="postWorkout" parent="NetworkManager" startPc="268436931">
+        <functionEntry accessMode="public" endPc="268436293" name="onLayout" parent="SettingsView" startPc="268436291">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436314" name="initialize" parent="SettingsView" startPc="268436294">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436412" name="onUpdate" parent="SettingsView" startPc="268436315">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436500" name="scrollDown" parent="FolderListView" startPc="268436413">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436503" name="onLayout" parent="FolderListView" startPc="268436501">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436554" name="getSelectedFolder" parent="FolderListView" startPc="268436504">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436659" name="initialize" parent="FolderListView" startPc="268436555">
+            <param id="networkManager"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437076" name="onUpdate" parent="FolderListView" startPc="268436660">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437201" name="onFoldersFetched" parent="FolderListView" startPc="268437077">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437307" name="scrollUp" parent="FolderListView" startPc="268437202">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437330" name="onPreviousPage" parent="FolderListDelegate" startPc="268437308">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437371" name="initialize" parent="FolderListDelegate" startPc="268437331">
+            <param id="view"/>
+            <param id="networkManager"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437394" name="onNextPage" parent="FolderListDelegate" startPc="268437372">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437533" name="onSelect" parent="FolderListDelegate" startPc="268437395">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437536" name="onLayout" parent="RoutineDetailView" startPc="268437534">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437567" name="initialize" parent="RoutineDetailView" startPc="268437537">
+            <param id="routine"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437717" name="onUpdate" parent="RoutineDetailView" startPc="268437568">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437746" name="onStart" parent="HevyApp" startPc="268437718">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437871" name="getInitialView" parent="HevyApp" startPc="268437747">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437896" name="initialize" parent="HevyApp" startPc="268437872">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437899" name="onStop" parent="HevyApp" startPc="268437897">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437963" name="fetchNextPage" parent="RoutineListView" startPc="268437900">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438246" name="onRoutinesFetched" parent="RoutineListView" startPc="268437964">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438334" name="scrollDown" parent="RoutineListView" startPc="268438247">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438337" name="onLayout" parent="RoutineListView" startPc="268438335">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438443" name="scrollUp" parent="RoutineListView" startPc="268438338">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438572" name="initialize" parent="RoutineListView" startPc="268438444">
+            <param id="networkManager"/>
+            <param id="folderId"/>
+            <param id="folderTitle"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439101" name="onUpdate" parent="RoutineListView" startPc="268438573">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439152" name="getSelectedRoutine" parent="RoutineListView" startPc="268439102">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439265" name="postWorkout" parent="NetworkManager" startPc="268439153">
             <param id="workoutData"/>
             <param id="callback"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437142" name="fetchRoutines" parent="NetworkManager" startPc="268437044">
+        <functionEntry accessMode="public" endPc="268439364" name="fetchFolders" parent="NetworkManager" startPc="268439266">
             <param id="callback"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437155" name="initialize" parent="NetworkManager" startPc="268437143">
+        <functionEntry accessMode="public" endPc="268439377" name="initialize" parent="NetworkManager" startPc="268439365">
             <param id="apiKey"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437158" name="onLayout" parent="SettingsView" startPc="268437156">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437179" name="initialize" parent="SettingsView" startPc="268437159">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437277" name="onUpdate" parent="SettingsView" startPc="268437180">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268439508" name="fetchRoutinesPage" parent="NetworkManager" startPc="268439378">
+            <param id="page"/>
+            <param id="callback"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="AppConstants">
