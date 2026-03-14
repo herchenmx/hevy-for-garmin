@@ -28,14 +28,19 @@ class NetworkManager {
         supabaseGet("/rest/v1/routine_folders?select=id,index,title&order=index.asc", callback);
     }
 
-    // Returns array of {id, title, folder_id}
+    // Returns array of {id, title, folder_id} ordered by most recently updated
     function fetchRoutinesByFolder(folderId, callback) {
-        supabaseGet("/rest/v1/routines?select=id,title,folder_id&folder_id=eq." + folderId + "&order=title.asc", callback);
+        supabaseGet("/rest/v1/routines?select=id,title,folder_id&folder_id=eq." + folderId + "&order=updated_at.desc", callback);
     }
 
     // Returns array with one item: full routine including exercises JSONB
     function fetchRoutine(routineId, callback) {
         supabaseGet("/rest/v1/routines?id=eq." + routineId, callback);
+    }
+
+    // Returns array with one item: most recent workout for a given routine
+    function fetchLatestWorkoutForRoutine(routineId, callback) {
+        supabaseGet("/rest/v1/workouts?routine_id=eq." + routineId + "&order=start_time.desc&limit=1", callback);
     }
 
     // Triggers manual re-sync from Hevy API via Edge Function

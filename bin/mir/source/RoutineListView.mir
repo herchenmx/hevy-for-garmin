@@ -539,214 +539,245 @@ _Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_
         ret %tmp.12;
 _Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_80_34_85_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 87; @symbol_functiondef = [scrollUp,87,13,21]; ]
-    function scrollUp() {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_87_24_92_4_start:
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 87; @symbol_functiondef = [getNetworkManager,87,13,30]; ]
+    function getNetworkManager() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_87_33_89_4_start:
 [ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 88 8 ]
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_8_91_8_if_stmt:
-        symbol [ _routines %tmp.2 88 12 21 ];
+        symbol [ _networkManager %tmp.2 88 15 30 ];
+        %tmp.2 = getv ? :_networkManager;
+        ret %tmp.2;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_87_33_89_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 91; @symbol_functiondef = [scrollUp,91,13,21]; ]
+    function scrollUp() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_91_24_96_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 92 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_8_95_8_if_stmt:
+        symbol [ _routines %tmp.2 92 12 21 ];
         %tmp.2 = getv ? :_routines;
-        symbol [ size %tmp.3 88 22 26 ];
+        symbol [ size %tmp.3 92 22 26 ];
         %tmp.3 = getv function %tmp.2 :size;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         %tmp.5 = 0;
         %tmp.6 = gt %tmp.4 %tmp.5;
-        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_8_91_8_if_end;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_8_91_8_if_true:
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_34_91_8_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 89 12 ]
-        symbol [ _selectedIndex %tmp.8 89 30 44 ];
+        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_8_95_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_8_95_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_34_95_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 93 12 ]
+        symbol [ _selectedIndex %tmp.8 93 30 44 ];
         %tmp.8 = getv ? :_selectedIndex;
         %tmp.9 = 1;
         %tmp.10 = sub %tmp.8 %tmp.9;
-        symbol [ _routines %tmp.12 89 51 60 ];
+        symbol [ _routines %tmp.12 93 51 60 ];
         %tmp.12 = getv ? :_routines;
-        symbol [ size %tmp.13 89 61 65 ];
+        symbol [ size %tmp.13 93 61 65 ];
         %tmp.13 = getv function %tmp.12 :size;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         %tmp.15 = add %tmp.10 %tmp.14;
-        symbol [ _routines %tmp.17 89 71 80 ];
+        symbol [ _routines %tmp.17 93 71 80 ];
         %tmp.17 = getv ? :_routines;
-        symbol [ size %tmp.18 89 81 85 ];
+        symbol [ size %tmp.18 93 81 85 ];
         %tmp.18 = getv function %tmp.17 :size;
         %tmp.19 = invoke %tmp.17 %tmp.18();
         %tmp.20 = mod %tmp.15 %tmp.19;
-        symbol [ _selectedIndex ? 89 12 26 ];
+        symbol [ _selectedIndex ? 93 12 26 ];
         putv self :_selectedIndex %tmp.20;
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 90 12 ]
-        symbol [ WatchUi %tmp.21 90 12 19 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 94 12 ]
+        symbol [ WatchUi %tmp.21 94 12 19 ];
         %tmp.21 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.22 90 20 33 ];
+        symbol [ requestUpdate %tmp.22 94 20 33 ];
         %tmp.22 = getv function %tmp.21 :requestUpdate;
         invoke %tmp.21 %tmp.22();
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_34_91_8_stop:
-        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_8_91_8_if_end;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_88_8_91_8_if_end:
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_87_24_92_4_stop:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_34_95_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_8_95_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_92_8_95_8_if_end:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_91_24_96_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 94; @symbol_functiondef = [scrollDown,94,13,23]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 98; @symbol_functiondef = [scrollDown,98,13,23]; ]
     function scrollDown() {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_94_26_99_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 95 8 ]
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_8_98_8_if_stmt:
-        symbol [ _routines %tmp.2 95 12 21 ];
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_98_26_103_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 99 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_8_102_8_if_stmt:
+        symbol [ _routines %tmp.2 99 12 21 ];
         %tmp.2 = getv ? :_routines;
-        symbol [ size %tmp.3 95 22 26 ];
+        symbol [ size %tmp.3 99 22 26 ];
         %tmp.3 = getv function %tmp.2 :size;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         %tmp.5 = 0;
         %tmp.6 = gt %tmp.4 %tmp.5;
-        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_8_98_8_if_end;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_8_98_8_if_true:
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_34_98_8_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 96 12 ]
-        symbol [ _selectedIndex %tmp.8 96 30 44 ];
+        bf %tmp.6 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_8_102_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_8_102_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_34_102_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 100 12 ]
+        symbol [ _selectedIndex %tmp.8 100 30 44 ];
         %tmp.8 = getv ? :_selectedIndex;
         %tmp.9 = 1;
         %tmp.10 = add %tmp.8 %tmp.9;
-        symbol [ _routines %tmp.12 96 52 61 ];
+        symbol [ _routines %tmp.12 100 52 61 ];
         %tmp.12 = getv ? :_routines;
-        symbol [ size %tmp.13 96 62 66 ];
+        symbol [ size %tmp.13 100 62 66 ];
         %tmp.13 = getv function %tmp.12 :size;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         %tmp.15 = mod %tmp.10 %tmp.14;
-        symbol [ _selectedIndex ? 96 12 26 ];
+        symbol [ _selectedIndex ? 100 12 26 ];
         putv self :_selectedIndex %tmp.15;
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 97 12 ]
-        symbol [ WatchUi %tmp.16 97 12 19 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 101 12 ]
+        symbol [ WatchUi %tmp.16 101 12 19 ];
         %tmp.16 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.17 97 20 33 ];
+        symbol [ requestUpdate %tmp.17 101 20 33 ];
         %tmp.17 = getv function %tmp.16 :requestUpdate;
         invoke %tmp.16 %tmp.17();
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_34_98_8_stop:
-        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_8_98_8_if_end;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_95_8_98_8_if_end:
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_94_26_99_4_stop:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_34_102_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_8_102_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_99_8_102_8_if_end:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_98_26_103_4_stop:
     }
 }
-[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 102; @symbol_classdef = [RoutineListDelegate,102,6,25]; @symbol_extends<0> = [WatchUi,102,34,41]; @symbol_extends<1> = [BehaviorDelegate,102,42,58]; ]
+[ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 106; @symbol_classdef = [RoutineListDelegate,106,6,25]; @symbol_extends<0> = [WatchUi,106,34,41]; @symbol_extends<1> = [BehaviorDelegate,106,42,58]; ]
 class RoutineListDelegate extends WatchUi.BehaviorDelegate {
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 102; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 106; ]
     <init> {
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 102; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 106; ]
     static
     <init> {
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 103; @position = 15; @symbol_vardef = [_view,103,15,20]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 107; @position = 15; @symbol_vardef = [_view,107,15,20]; ]
     protected
     var _view;
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 105; @symbol_functiondef = [initialize,105,13,23]; @symbol_param<0> = [view,105,24,28]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 109; @symbol_functiondef = [initialize,109,13,23]; @symbol_param<0> = [view,109,24,28]; ]
     function initialize(view) as Void {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_105_30_108_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 106 8 ]
-        symbol [ BehaviorDelegate %tmp.2 106 8 24 ];
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_109_30_112_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 110 8 ]
+        symbol [ BehaviorDelegate %tmp.2 110 8 24 ];
         %tmp.2 = getv ? :BehaviorDelegate;
-        symbol [ initialize %tmp.3 106 25 35 ];
+        symbol [ initialize %tmp.3 110 25 35 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 107 8 ]
-        %tmp.4 = lgetv %view;
-        symbol [ view %tmp.4 107 16 20 ];
-        symbol [ _view ? 107 8 13 ];
-        putv self :_view %tmp.4;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_105_30_108_4_stop:
-    }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 110; @symbol_functiondef = [onPreviousPage,110,13,27]; ]
-    function onPreviousPage() {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_110_30_113_4_start:
 [ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 111 8 ]
-        symbol [ _view %tmp.2 111 8 13 ];
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 111 16 20 ];
+        symbol [ _view ? 111 8 13 ];
+        putv self :_view %tmp.4;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_109_30_112_4_stop:
+    }
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 114; @symbol_functiondef = [onPreviousPage,114,13,27]; ]
+    function onPreviousPage() {
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_114_30_117_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 115 8 ]
+        symbol [ _view %tmp.2 115 8 13 ];
         %tmp.2 = getv ? :_view;
-        symbol [ scrollUp %tmp.3 111 14 22 ];
+        symbol [ scrollUp %tmp.3 115 14 22 ];
         %tmp.3 = getv function %tmp.2 :scrollUp;
         invoke %tmp.2 %tmp.3();
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 112 8 ]
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 116 8 ]
         %tmp.4 = true;
         ret %tmp.4;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_110_30_113_4_stop:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_114_30_117_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 115; @symbol_functiondef = [onNextPage,115,13,23]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 119; @symbol_functiondef = [onNextPage,119,13,23]; ]
     function onNextPage() {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_115_26_118_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 116 8 ]
-        symbol [ _view %tmp.2 116 8 13 ];
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_119_26_122_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 120 8 ]
+        symbol [ _view %tmp.2 120 8 13 ];
         %tmp.2 = getv ? :_view;
-        symbol [ scrollDown %tmp.3 116 14 24 ];
+        symbol [ scrollDown %tmp.3 120 14 24 ];
         %tmp.3 = getv function %tmp.2 :scrollDown;
         invoke %tmp.2 %tmp.3();
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 117 8 ]
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 121 8 ]
         %tmp.4 = true;
         ret %tmp.4;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_115_26_118_4_stop:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_119_26_122_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 120; @symbol_functiondef = [onSelect,120,13,21]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 124; @symbol_functiondef = [onSelect,124,13,21]; ]
     function onSelect() {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_120_24_130_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 121 8 ]
-        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_120_24_130_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_120_24_130_4_stop" ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_124_24_139_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 125 8 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_124_24_139_4_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_124_24_139_4_stop" ]
         %routine.1 = local;
-        symbol [ routine %routine.1 121 12 19 ];
-        symbol [ _view %tmp.2 121 22 27 ];
+        symbol [ routine %routine.1 125 12 19 ];
+        symbol [ _view %tmp.2 125 22 27 ];
         %tmp.2 = getv ? :_view;
-        symbol [ getSelectedRoutine %tmp.3 121 28 46 ];
+        symbol [ getSelectedRoutine %tmp.3 125 28 46 ];
         %tmp.3 = getv function %tmp.2 :getSelectedRoutine;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %routine.1 %tmp.4;
-        symbol [ routine %routine.1 121 12 19 ];
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 122 8 ]
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_8_128_8_if_stmt:
+        symbol [ routine %routine.1 125 12 19 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 126 8 ]
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_8_137_8_if_stmt:
         %tmp.5 = lgetv %routine.1;
-        symbol [ routine %tmp.5 122 12 19 ];
+        symbol [ routine %tmp.5 126 12 19 ];
         %tmp.6 = null;
         %tmp.7 = ne %tmp.5 %tmp.6;
-        bf %tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_8_128_8_if_end;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_8_128_8_if_true:
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_29_128_8_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 123 12 ]
-        symbol [ WatchUi %tmp.8 123 12 19 ];
-        %tmp.8 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.9 123 20 28 ];
-        %tmp.9 = getv function %tmp.8 :pushView;
-        symbol [ RoutineDetailView %tmp.13 124 20 37 ];
-        %tmp.13 = getv ? :RoutineDetailView;
-        %tmp.14 = lgetv %routine.1;
-        symbol [ routine %tmp.14 124 38 45 ];
-        %tmp.15 = as %tmp.14 { (!Null) };
-        %tmp.10 = newc %tmp.13 (%tmp.15);
-        symbol [ RoutineDetailDelegate %tmp.19 125 20 41 ];
-        %tmp.19 = getv ? :RoutineDetailDelegate;
-        %tmp.16 = newc %tmp.19 ();
-        symbol [ WatchUi %tmp.20 126 16 23 ];
-        %tmp.20 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.21 126 24 34 ];
-        %tmp.21 = getv %tmp.20 :SLIDE_LEFT;
-        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.16, %tmp.21);
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_29_128_8_stop:
-        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_8_128_8_if_end;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_122_8_128_8_if_end:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 129 8 ]
-        %tmp.22 = true;
-        ret %tmp.22;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_120_24_130_4_stop:
+        bf %tmp.7 @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_8_137_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_8_137_8_if_true:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_29_137_8_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 127 12 ]
+        [ "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_29_137_8_start" "_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_29_137_8_stop" ]
+        %detailView.2 = local;
+        symbol [ detailView %detailView.2 127 16 26 ];
+        symbol [ RoutineDetailView %tmp.11 127 33 50 ];
+        %tmp.11 = getv ? :RoutineDetailView;
+        symbol [ _view %tmp.13 128 16 21 ];
+        %tmp.13 = getv ? :_view;
+        symbol [ getNetworkManager %tmp.14 128 22 39 ];
+        %tmp.14 = getv function %tmp.13 :getNetworkManager;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = lgetv %routine.1;
+        symbol [ routine %tmp.16 129 16 23 ];
+        %tmp.17 = as %tmp.16 { (!Null) };
+        %tmp.18 = "id";
+        %tmp.19 = agetv %tmp.17 %tmp.18;
+        %tmp.20 = lgetv %routine.1;
+        symbol [ routine %tmp.20 130 16 23 ];
+        %tmp.21 = as %tmp.20 { (!Null) };
+        %tmp.22 = "title";
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        %tmp.8 = newc %tmp.11 (%tmp.15, %tmp.19, %tmp.23);
+        lputv %detailView.2 %tmp.8;
+        symbol [ detailView %detailView.2 127 16 26 ];
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 132 12 ]
+        symbol [ WatchUi %tmp.24 132 12 19 ];
+        %tmp.24 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.25 132 20 28 ];
+        %tmp.25 = getv function %tmp.24 :pushView;
+        %tmp.26 = lgetv %detailView.2;
+        symbol [ detailView %tmp.26 133 16 26 ];
+        symbol [ RoutineDetailDelegate %tmp.30 134 20 41 ];
+        %tmp.30 = getv ? :RoutineDetailDelegate;
+        %tmp.31 = lgetv %detailView.2;
+        symbol [ detailView %tmp.31 134 42 52 ];
+        %tmp.27 = newc %tmp.30 (%tmp.31);
+        symbol [ WatchUi %tmp.32 135 16 23 ];
+        %tmp.32 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.33 135 24 34 ];
+        %tmp.33 = getv %tmp.32 :SLIDE_LEFT;
+        invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.33);
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_29_137_8_stop:
+        goto @_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_8_137_8_if_end;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_126_8_137_8_if_end:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 138 8 ]
+        %tmp.34 = true;
+        ret %tmp.34;
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_124_24_139_4_stop:
     }
-    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 132; @symbol_functiondef = [onBack,132,13,19]; ]
+    [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 141; @symbol_functiondef = [onBack,141,13,19]; ]
     function onBack() {
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_132_22_135_4_start:
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 133 8 ]
-        symbol [ WatchUi %tmp.1 133 8 15 ];
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_141_22_144_4_start:
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 142 8 ]
+        symbol [ WatchUi %tmp.1 142 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.2 133 16 23 ];
+        symbol [ popView %tmp.2 142 16 23 ];
         %tmp.2 = getv function %tmp.1 :popView;
-        symbol [ WatchUi %tmp.3 133 24 31 ];
+        symbol [ WatchUi %tmp.3 142 24 31 ];
         %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.4 133 32 43 ];
+        symbol [ SLIDE_RIGHT %tmp.4 142 32 43 ];
         %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 134 8 ]
+[ "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" 143 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_132_22_135_4_stop:
+_Users_maria_Downloads_hevy_for_garmin_app_HevyConnectIQ_source_RoutineListView_mc_141_22_144_4_stop:
     }
 }
 [ @file = "/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc"; @line = 1; ]

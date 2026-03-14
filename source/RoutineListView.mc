@@ -84,6 +84,10 @@ class RoutineListView extends WatchUi.View {
         return null;
     }
 
+    function getNetworkManager() {
+        return _networkManager;
+    }
+
     function scrollUp() {
         if (_routines.size() > 0) {
             _selectedIndex = (_selectedIndex - 1 + _routines.size()) % _routines.size();
@@ -120,9 +124,14 @@ class RoutineListDelegate extends WatchUi.BehaviorDelegate {
     function onSelect() {
         var routine = _view.getSelectedRoutine();
         if (routine != null) {
+            var detailView = new RoutineDetailView(
+                _view.getNetworkManager(),
+                routine["id"],
+                routine["title"]
+            );
             WatchUi.pushView(
-                new RoutineDetailView(routine),
-                new RoutineDetailDelegate(),
+                detailView,
+                new RoutineDetailDelegate(detailView),
                 WatchUi.SLIDE_LEFT
             );
         }
