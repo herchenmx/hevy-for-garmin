@@ -4,7 +4,7 @@
     <pcToLineNum>
         <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineListView.mc" id="1" lineNum="106" parent="globals/RoutineListDelegate" pc="268435460" symbol="&lt;init&gt;"/>
         <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/RoutineDetailView.mc" id="2" lineNum="181" parent="globals/RoutineDetailDelegate" pc="268435479" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/bin/gen/006-B3225-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435498" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/bin/gen/006-B3224-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435498" symbol="&lt;init&gt;"/>
         <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/SettingsPage.mc" id="4" lineNum="4" parent="globals/SettingsView" pc="268435522" symbol="&lt;init&gt;"/>
         <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/WorkoutSessionView.mc" id="5" lineNum="139" parent="globals/WorkoutSessionDelegate" pc="268435541" symbol="&lt;init&gt;"/>
         <entry filename="/Users/maria/Downloads/hevy-for-garmin-app/HevyConnectIQ/source/FolderListView.mc" id="6" lineNum="5" parent="globals/FolderListView" pc="268435560" symbol="&lt;init&gt;"/>
@@ -652,7 +652,7 @@
         <entry arg="true" endPc="268443139" name="routineId" stackId="1" startPc="268443109"/>
         <entry arg="true" endPc="268443139" name="callback" stackId="2" startPc="268443109"/>
     </localVars>
-    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3225-00"/>
+    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3224-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
